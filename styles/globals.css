@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Sorts+Mill+Goudy&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sorts Mill Goudy", serif;
+  background-color: #3c4649;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+p {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  color: #91959b;
+  font-size: 1.2rem;
+}
+/*NAV MENU*/
+/*NAV BAR*/
+.nav-div{
+  margin-bottom: 3.5rem;
+}
+.nav-menu{
+    
+}
+.nav-line{
+  height: 0.1rem;
+  width: 4rem;
+  background-color: #ebe7e0;
+  margin: 0.5rem 0;
+  box-shadow: 0.3rem 0.2rem #1e2528;
+}
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top:1rem;
+  width: 100%;
+}
+.nav-link{
+  font-size: 2.5rem;
+  font-family:'Sorts Mill Goudy', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color:#ebe7e0;
+  z-index: 100;
+  margin: 0 2.5rem;
+  visibility: hidden;
+}
+.nav-link:hover{
+  color:#ff8059;
+}
+/*End of NAV BAR*/
+
+/*END OF NAV MENU*/
+
+/*INTRO*/
+.intro-div{
+  margin-top: 1.5rem;
+}
+.profilePic {
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.current-profile {
+  letter-spacing: 0.001rem;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.name {
+  color: #ebe7e0;
+  font-family: "Sorts Mill Goudy";
+  font-size: 4rem;
+  line-height: 100%;
+}
+.line {
+  border-left: 2px solid #91959b;
+  height: 30%;
+  margin: 0 2% 0 2%;
+  width: 2px;
+}
+
+.basic-info {
+  padding:4em 0;
+  background-color: #1e2528;
+}
+.basic-info span {
+  font-size: large;
+  font-weight: 700;
+  color: #ebe7e0;
+}
+.about-me-div {
+  background-color: #1e2528;
+  padding-bottom: 1.5em;
+}
+.about-me-div .about-me-heading {
+  font-family: "Sorts Mill Goudy";
+  color: #ebe7e0;
+  font-size: 7rem;
+}
+.line-2 {
+  align-self: center;
+  border-left: 2px solid #91959b;
+  height: 25em;
+  margin: 0 2% 0 2%;
+  width: 5px;
+}
+.about-me-figs {
+  direction: rtl;
+}
+.about-me-figs span {
+  font-size: xx-large;
+  font-weight: 700;
+}
+.about-me-para p {
+  margin: 25px 0 25px 0;
+}
+.about-me-figs span {
+  font-style: italic;
+  font-weight: 500;
+}
+.about-me-para .btn {
+  color: #ebe7e0;
+  border-color: #ff8059;
+}
+.about-me-para .btn:hover {
+  background-color: #ff8059;
+}
+.about-me-para a:hover {
+  color: #ebe7e0;
+  background-color: #ff8059;
+}
+
+/*RESUME*/
+.resume-div p {
+  color: #b9d1e4;
+}
+.resume-div .about-me-heading {
+  font-family: "Sorts Mill Goudy";
+  color: #ebe7e0;
+  font-size: 7rem;
+}
+.resume-body,
+.about-me-body {
+  margin: 0.9em 0 1.5em 0;
+}
+
+/*Lottie*/
+.web-designer {
+  display: grid;
+  place-items: center;
+}
+.line-3 {
+  align-self: center;
+  border-left: 2px solid #91959b;
+  height: 50em;
+  margin: 0 2% 0 2%;
+  width: 5px;
+}
+.skill-heading {
+  margin: 1.2em 0 0 0;
+  font-weight: 600;
+  font-family: "Sorts Mill Goudy";
+  color: #ebe7e0;
+}
+.skill-headings {
+  margin-left: 1em;
+  font-weight: 500;
+  color: #ebe7e0;
+}
+.skill-icons {
+  object-fit: contain;
+  width: 42px;
+  height: 42px;
+}
+.skill-icons img {
+  margin: 0 0.9em 0 0.9em;
+}
+.skill {
+  margin: 0.9em 0 0.9em 0;
+}
+.ed-headings {
+  margin: 1em 0 0 1em;
+  font-weight: 500;
+  color: #ebe7e0;
+}
+.ed-details {
+  font-family: "Rubik";
+  margin-left: 1em;
+  font-weight: 300 !important;
+}
+.ed-details p {
+  color: #b9d1e4;
+  margin-top: 0;
+  margin-bottom: 0;
+}
