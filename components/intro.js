@@ -1,5 +1,4 @@
-import Image from "next/image";
-import profilePic from "../public/minepic.jpg";
+
 
 export default function Intro() {
   return (
@@ -16,7 +15,7 @@ export default function Intro() {
         <div className="col-md-4">
           <img
             className="profilePic"
-            src="minepic.jpg"
+            src="minepic.png"
             alt="Picture of the author"
           />
         </div>

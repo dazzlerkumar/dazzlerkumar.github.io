@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../public/minepic.jpg";
+
 import { FcInspection } from "react-icons/fc";
 import Lottie from "react-lottie";
 import animationData from "/public/webdesigner.json";
