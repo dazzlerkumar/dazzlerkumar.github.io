@@ -33,19 +33,19 @@ export default function Intro() {
                 </span>
               </p>
               <p>
-                Fascinated by Computers, Mathematics, Physics, Physical
-                Cosmology and Humanities. Seeking for shelter on Mars and
-                Proxima Centauri B.
+              Worked as a part-time Front-End Website Developer for about 1 year 
+              in two start-ups with experience building
+              User Interfaces of websites using Angular 12 and NextJs (ReactJS) frameworks.
               </p>
               <p>
-                I've done my schooling from Kendriya Vidyalaya, Gomti Nagar,
-                Lucknow, and currently pursuing Bachelor's of Technology in
-                Computer Science Engineering from Babu Banarasi Das National
-                Institute of Technology and Management.
+              
+I describe myself as a focused, fast learner, curious and grateful person. I see and find patterns in day-to-day life,
+and keep optimizing my daily life.
+
               </p>
             </div>
             <button className="btn btn-lg">
-              <a href="target" target="_blank">
+              <a href="https://drive.google.com/file/d/1EvbWzEDwSAB2OW-41rBunOm3y-hP58vh/view?usp=sharing" target="_blank">
                 Resume
               </a>
             </button>
