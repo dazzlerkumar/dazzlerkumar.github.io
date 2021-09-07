@@ -29,7 +29,7 @@ export default function Intro() {
             I'm currently studying
             <br /> Computer Science Engineering <br />
             at BBDNITM, Lucknow.
-            <br /> I love play with CSS and JS.
+            <br /> I love to play with CSS and JS.
           </p>
         </div>
       </div>

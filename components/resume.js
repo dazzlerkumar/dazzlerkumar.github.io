@@ -38,7 +38,7 @@ function resume() {
                             <h4 className="skill-headings">Front End</h4>
                             <div className="d-flex skill-icons">
                                 <img src="html.png" />
-                                <img src="css.png" />
+                                <img src="css3.png" />
                                 <img src="javascript.png" />
                                 <img src="typescript.png" />
 
@@ -57,8 +57,8 @@ function resume() {
                             <h4 className="skill-headings">Tools</h4>
                             <div className="d-flex skill-icons">
                                 <img src="npm.png" />
-                                <img src="postman.png" />
-                                <img src="figma.png" />
+                                <img src="git.png" />
+                            
                             </div>
                         </div>
                         <h2 className="skill-heading">Education</h2>
