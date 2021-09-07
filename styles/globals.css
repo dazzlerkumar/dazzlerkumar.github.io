@@ -66,12 +66,10 @@ p {
 .intro-div{
   margin-top: 1.5rem;
 }
-.profilePic {
-  height: auto;
-  width: 100%;
-  object-fit: scale-down;
+.name-position-box{
+  display: flex;
+  flex-direction: column;
 }
-
 .current-profile {
   letter-spacing: 0.001rem;
   font-family: "Rubik";
@@ -84,11 +82,32 @@ p {
   font-size: 4rem;
   line-height: 100%;
 }
+
+.profile-pic-div{
+  display: flex;
+  justify-content: center;
+}
+.profilePic {
+  
+  height: 68.5vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 .line {
   border-left: 2px solid #91959b;
   height: 30%;
-  margin: 0 2% 0 2%;
+  margin: 0 2% 0.3em 2%;
   width: 2px;
+}
+.impressum{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.impressum p{
+ margin: 0 0 0.5em 0;
 }
 
 .basic-info {

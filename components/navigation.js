@@ -3,6 +3,18 @@ import { useState } from "react";
 export default function navigation() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [click, setclick] = useState('visible');
+
+    function navClickFunc(){
+        
+        if(click === 'visible'){
+            setclick('hidden');
+            console.log(click)
+        }
+        else{
+            setclick('visible');
+            console.log(click)
+        }
+    }
     //Styled Component
     const NavMenu = styled.div`
         display: grid;
@@ -17,7 +29,7 @@ export default function navigation() {
     
     return (
         <div className="nav-div">
-            <NavMenu visible={click} onClick={()=>setclick('hidden')}>
+            <NavMenu visible={click} onClick={navClickFunc}>
                 <div>
                     <div className="nav-line"></div>
                     <div className="nav-line"></div>

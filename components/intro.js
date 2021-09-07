@@ -4,22 +4,26 @@ export default function Intro() {
   return (
     <div className="intro-div">
       <div className="container d-flex">
-        <div className="col-md-4 d-flex flex-column justify-content-end">
+        <div className="col-md-4 d-flex justify-content-end align-items-end">
+          <div className="name-position-box">
           <p className="current-profile">Final Year CS UnderGrad</p>
           <p className="name">
             Deepak
             <br />
             Kumar
           </p>
+          </div>
+          
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 profile-pic-div">
           <img
+
             className="profilePic"
             src="minepic.png"
             alt="Picture of the author"
           />
         </div>
-        <div className="col-md-4 d-flex align-items-end">
+        <div className="col-md-4 impressum ">
           <div className="line"></div>
           <p>
             I'm currently studying
