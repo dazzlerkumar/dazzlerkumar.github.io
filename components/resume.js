@@ -65,7 +65,7 @@ return (
       <h4 className="ed-headings">Bachelors of Technology</h4>
       <div className="ed-details">
         <p>Graduating in 2022</p>
-        <p>currently 6.99 CGPA</p>
+        <p>currently 7.29 CGPA</p>
         <p>Dr. APJ Abdul Kalam Technical Univesity, Lucknow</p>
       </div>
       <h4 className="ed-headings">High School (10+2)</h4>
