@@ -23,6 +23,16 @@ p {
   color: #91959b;
   font-size: 1.2rem;
 }
+
+/*SUPER HEADINGS*/
+.super-heading {
+  font-family: "Sorts Mill Goudy" !important;
+  color: #ebe7e0 !important;
+  font-size: 7rem !important;
+}
+/*END of SUPER HEADINGS*/
+
+
 /*NAV MENU*/
 /*NAV BAR*/
 .nav-div{
@@ -66,6 +76,9 @@ p {
 .intro-div{
   margin-top: 1.5rem;
 }
+.hero{
+  display: flex;
+}
 .name-position-box{
   display: flex;
   flex-direction: column;
@@ -101,12 +114,12 @@ p {
   margin: 0 2% 0.3em 2%;
   width: 2px;
 }
-.impressum{
+.sub-hero-3{
   display: flex;
   justify-content: start;
   align-items: flex-end;
 }
-.impressum p{
+.sub-hero-3 p{
  margin: 0 0 0.5em 0;
 }
 
@@ -123,11 +136,7 @@ p {
   background-color: #1e2528;
   padding-bottom: 1.5em;
 }
-.about-me-div .about-me-heading {
-  font-family: "Sorts Mill Goudy";
-  color: #ebe7e0;
-  font-size: 7rem;
-}
+
 .line-2 {
   align-self: center;
   border-left: 2px solid #91959b;
@@ -165,11 +174,6 @@ p {
 .resume-div p {
   color: #b9d1e4;
 }
-.resume-div .about-me-heading {
-  font-family: "Sorts Mill Goudy";
-  color: #ebe7e0;
-  font-size: 7rem;
-}
 .resume-body,
 .about-me-body {
   margin: 0.9em 0 1.5em 0;
@@ -199,9 +203,7 @@ p {
   color: #ebe7e0;
 }
 .skill-icons {
-  object-fit: contain;
-  width: 42px;
-  height: 42px;
+  display: flex;
 }
 .skill-icons img {
   margin: 0 0.9em 0 0.9em;
@@ -223,4 +225,67 @@ p {
   color: #b9d1e4;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/*________________________________*/
+/*MOBILE VERSION*/
+/*________________________________*/
+
+
+@media (max-width: 768px) { 
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-hero-1, .sub-hero-2,.sub-hero-3{
+    align-self: center;
+  }
+  .sub-hero-3{
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+  .sub-hero-3 .line{
+    height: 10em;
+    width: 2px;
+  }
+  .basic-info{
+    padding: 1.5em 0;
+  }
+  .basic-info > div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .basic-info > div> p{
+    padding: 0.5em 0;
+    text-align: center;
+  }
+  /*Super Heading*/
+  .super-heading {
+    font-family: "Sorts Mill Goudy" !important;
+    color: #ebe7e0 !important;
+    font-size: 3.5rem !important;
+    margin-left: 0.2em;
+  }
+
+  /*ABOUT ME*/
+  .about-me-body{
+    flex-direction: column;
+  }
+  .about-me-para{
+    padding: 0 2%;
+  }
+
+  /*RESUME*/
+  .resume-body{
+    flex-direction: column;
+  }
+  .skill-icons{
+    flex-direction: column;
+    
+  }
+  .icon-frame{
+    margin: 0.5em 0;
+    width: 100%;
+  }
 }
