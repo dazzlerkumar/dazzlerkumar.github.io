@@ -45,7 +45,7 @@ and keep optimizing my daily life.
               </p>
             </div>
             <button className="btn btn-lg">
-              <a href="https://drive.google.com/file/d/1EvbWzEDwSAB2OW-41rBunOm3y-hP58vh/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1EvbWzEDwSAB2OW-41rBunOm3y-hP58vh/view?usp=sharing">
                 Resume
               </a>
             </button>
