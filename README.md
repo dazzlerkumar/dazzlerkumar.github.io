@@ -52,7 +52,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 - [React Lottie (Unofficial)](https://github.com/chenqingspring/react-lottie)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
-# Suggestions/Contrubutions 💡
+## Suggestions/Contrubutions 💡
 
 If you have any,
 - Suggestions
