@@ -178,6 +178,10 @@ p {
     display: grid;
     place-items: center;
 }
+.lottie-container{
+  max-height: 400px;
+  max-height: 400px;
+}
 .line-3 {
     align-self: center;
     border-left: 2px solid #91959b;

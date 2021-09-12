@@ -1,5 +1,9 @@
-import Lottie from "react-lottie";
+
 import animationData from "/public/books.json";
+
+import { Player } from "@lottiefiles/react-lottie-player";
+
+
 function resume() {
     const defaultOptions = {
         loop: true,
@@ -16,7 +20,12 @@ function resume() {
                 <p className="super-heading">Resume</p>
                 <div className="resume-body d-flex justify-content-center">
                     <div className="col-md-5 web-designer">
-                        <Lottie options={defaultOptions} />
+                    <Player
+                            autoplay
+                            loop
+                            src={animationData}
+                            style={{ height: "100%", width: "100%" }}
+                        />
                     </div>
                     <div className="d-flex col-md-7">
                         <div className="line-3"></div>

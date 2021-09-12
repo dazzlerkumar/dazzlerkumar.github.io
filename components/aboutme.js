@@ -1,16 +1,7 @@
-import Lottie from "react-lottie";
 import animationData from "/public/webdesigner.json";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function Intro() {
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-        },
-    };
-
     return (
         <div className="about-me-div">
             <div className="container">
@@ -19,10 +10,12 @@ export default function Intro() {
                 {/*ABOUT ME BODY */}
                 <div className="about-me-body d-flex justify-content-center">
                     <div className="col-md-5 web-designer">
-                        <Lottie
-                            options={defaultOptions}
-                            
-                        />
+                        <Player
+                            autoplay
+                            loop
+                            src={animationData}
+                            style={{ height: "80%", width: "80%" }}
+                        ></Player>
                     </div>
                     <div className="d-flex col-md-7">
                         <div className="line-2"></div>
@@ -52,7 +45,10 @@ export default function Intro() {
                                 </p>
                             </div>
                             <button className="btn btn-lg">
-                                <a href="https://drive.google.com/file/d/1EvbWzEDwSAB2OW-41rBunOm3y-hP58vh/view?usp=sharing">
+                                <a
+                                    target="_blank"
+                                    href="https://drive.google.com/file/d/1reHamDrvvufz4xGTEliNDL9KMHWC3Dwd/view?usp=sharing"
+                                >
                                     Resume
                                 </a>
                             </button>

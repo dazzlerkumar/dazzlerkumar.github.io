@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.1",
     "bootstrap": "^5.1.0",
     "lottie-web": "^5.7.13",
     "next": "11.1.0",
