@@ -48,16 +48,16 @@ export default function Intro() {
             {/*END OF HERO*/}
             <div className="social-media d-flex align-items-center">
                 <div className="container d-flex justify-content-around">
-                    <a target="_blank" href="https://twitter.com/Dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com/Dazzlerkumar">
                         <Image src={twt} quality={100} alt="twitter Icon" />
                     </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/dazzlerkumar/">
+                    <a target="_blank"  rel="noreferrer" href="https://www.linkedin.com/in/dazzlerkumar/">
                         <Image src={lin} quality={100} alt="LinkedIn Icon" />
                     </a>
-                    <a target="_blank" href="https://github.com/dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href="https://github.com/dazzlerkumar">
                         <Image src={git} quality={100} alt="twitter Icon" />
                     </a>
-                    <a target="_blank" href="https://medium.com/@dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href="https://medium.com/@dazzlerkumar">
                         <Image src={medium} quality={100} alt="twitter Icon" />
                     </a>
                 </div>
