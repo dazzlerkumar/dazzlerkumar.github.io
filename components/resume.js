@@ -170,7 +170,7 @@ function resume() {
                                         MAY 2021 – JUNE 2021
                                         </p>
                                         <h4 className="ed-headings">
-                                        DATA ANALYTICS INTERN
+                                        Data Analytics Intern
                                         </h4>
                                         <div className="ed-details">
                                             <h6>THE SPARKS FOUNDATION</h6>
