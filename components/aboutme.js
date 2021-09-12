@@ -18,13 +18,13 @@ export default function Intro() {
                 <p className="super-heading">About Me</p>
                 {/*ABOUT ME BODY */}
                 <div className="about-me-body d-flex justify-content-center">
-                    <div className="col-md-6 web-designer">
+                    <div className="col-md-5 web-designer">
                         <Lottie
                             options={defaultOptions}
                             
                         />
                     </div>
-                    <div className="d-flex col-md-6">
+                    <div className="d-flex col-md-7">
                         <div className="line-2"></div>
                         <div className="about-me-para">
                             <div>

@@ -8,7 +8,7 @@ export default function Intro() {
                     <div className="sub-hero-1 col-md-4 d-flex justify-content-end align-items-end">
                         <div className="name-position-box">
                             <p className="current-profile">
-                                Final Year CS UnderGrad
+                                Frontend Developer
                             </p>
                             <p className="name">
                                 Deepak
@@ -34,7 +34,7 @@ export default function Intro() {
                             I'm currently studying
                             <br /> Computer Science Engineering <br />
                             at BBDNITM, Lucknow.
-                            <br /> I love to play with CSS and JS.
+                            <br /> and free-lancing as a Frontend Developer.
                         </p>
                     </div>
                 </div>

@@ -2,290 +2,304 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Sorts Mill Goudy", serif;
-  background-color: #3c4649;
+    padding: 0;
+    margin: 0;
+    font-family: "Sorts Mill Goudy", serif;
+    background-color: #3c4649;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 p {
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  color: #91959b;
-  font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: #91959b;
+    font-size: 1.2rem;
 }
 
 /*SUPER HEADINGS*/
 .super-heading {
-  font-family: "Sorts Mill Goudy" !important;
-  color: #ebe7e0 !important;
-  font-size: 7rem !important;
+    font-family: "Sorts Mill Goudy" !important;
+    color: #ebe7e0 !important;
+    font-size: 7rem !important;
 }
 /*END of SUPER HEADINGS*/
 
-
 /*NAV MENU*/
 /*NAV BAR*/
-.nav-div{
-  margin-bottom: 3.5rem;
+.nav-div {
+    margin-bottom: 3.5rem;
 }
-.nav-menu{
-    
+.nav-menu {
 }
-.nav-line{
-  height: 0.1rem;
-  width: 4rem;
-  background-color: #ebe7e0;
-  margin: 0.5rem 0;
-  box-shadow: 0.3rem 0.2rem #1e2528;
+.nav-line {
+    height: 0.1rem;
+    width: 4rem;
+    background-color: #ebe7e0;
+    margin: 0.5rem 0;
+    box-shadow: 0.3rem 0.2rem #1e2528;
 }
-.navbar{
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top:1rem;
-  width: 100%;
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 1rem;
+    width: 100%;
 }
-.nav-link{
-  font-size: 2.5rem;
-  font-family:'Sorts Mill Goudy', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  color:#ebe7e0;
-  z-index: 100;
-  margin: 0 2.5rem;
-  visibility: hidden;
+.nav-link {
+    font-size: 2.5rem;
+    font-family: "Sorts Mill Goudy", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ebe7e0;
+    z-index: 100;
+    margin: 0 2.5rem;
+    visibility: hidden;
 }
-.nav-link:hover{
-  color:#ff8059;
+.nav-link:hover {
+    color: #ff8059;
 }
 /*End of NAV BAR*/
 
 /*END OF NAV MENU*/
 
 /*INTRO*/
-.intro-div{
-  margin-top: 1.5rem;
+.intro-div {
+    margin-top: 1.5rem;
 }
-.hero{
-  display: flex;
+.hero {
+    display: flex;
 }
-.name-position-box{
-  display: flex;
-  flex-direction: column;
+.name-position-box {
+    display: flex;
+    flex-direction: column;
 }
 .current-profile {
-  letter-spacing: 0.001rem;
-  font-family: "Rubik";
-  font-size: 1.5rem;
-  font-weight: 400;
+    letter-spacing: 0.001rem;
+    font-family: "Rubik";
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 .name {
-  color: #ebe7e0;
-  font-family: "Sorts Mill Goudy";
-  font-size: 4rem;
-  line-height: 100%;
+    color: #ebe7e0;
+    font-family: "Sorts Mill Goudy";
+    font-size: 4rem;
+    line-height: 100%;
 }
 
-.profile-pic-div{
-  display: flex;
-  justify-content: center;
+.profile-pic-div {
+    display: flex;
+    justify-content: center;
 }
 .profilePic {
-  
-  height: 68.5vh;
-  width: 100%;
-  object-fit: cover;
+    height: 68.5vh;
+    width: 100%;
+    object-fit: cover;
 }
-
 
 .line {
-  border-left: 2px solid #91959b;
-  height: 30%;
-  margin: 0 2% 0.3em 2%;
-  width: 2px;
+    border-left: 2px solid #91959b;
+    height: 30%;
+    margin: 0 2% 0.3em 2%;
+    width: 2px;
 }
-.sub-hero-3{
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
+.sub-hero-3 {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
 }
-.sub-hero-3 p{
- margin: 0 0 0.5em 0;
+.sub-hero-3 p {
+    margin: 0 0 0.5em 0;
 }
 
 .basic-info {
-  padding:4em 0;
-  background-color: #1e2528;
+    padding: 4em 0;
+    background-color: #1e2528;
 }
 .basic-info span {
-  font-size: large;
-  font-weight: 700;
-  color: #ebe7e0;
+    font-size: large;
+    font-weight: 700;
+    color: #ebe7e0;
 }
 .about-me-div {
-  background-color: #1e2528;
-  padding-bottom: 1.5em;
+    background-color: #1e2528;
+    padding-bottom: 1.5em;
 }
 
 .line-2 {
-  align-self: center;
-  border-left: 2px solid #91959b;
-  height: 25em;
-  margin: 0 2% 0 2%;
-  width: 5px;
+    align-self: center;
+    border-left: 2px solid #91959b;
+    height: 25em;
+    margin: 0 2% 0 2%;
+    width: 5px;
 }
 .about-me-figs {
-  direction: rtl;
+    direction: rtl;
 }
 .about-me-figs span {
-  font-size: xx-large;
-  font-weight: 700;
+    font-size: xx-large;
+    font-weight: 700;
 }
 .about-me-para p {
-  margin: 25px 0 25px 0;
+    margin: 25px 0 25px 0;
 }
 .about-me-figs span {
-  font-style: italic;
-  font-weight: 500;
+    font-style: italic;
+    font-weight: 500;
 }
 .about-me-para .btn {
-  color: #ebe7e0;
-  border-color: #ff8059;
+    color: #ebe7e0;
+    border-color: #ff8059;
 }
 .about-me-para .btn:hover {
-  background-color: #ff8059;
+    background-color: #ff8059;
 }
 .about-me-para a:hover {
-  color: #ebe7e0;
-  background-color: #ff8059;
+    color: #ebe7e0;
+    background-color: #ff8059;
 }
 
 /*RESUME*/
 .resume-div p {
-  color: #b9d1e4;
+    color: #b9d1e4;
 }
 .resume-body,
 .about-me-body {
-  margin: 0.9em 0 1.5em 0;
+    margin: 0.9em 0 1.5em 0;
 }
 
 /*Lottie*/
 .web-designer {
-  display: grid;
-  place-items: center;
+    display: grid;
+    place-items: center;
 }
 .line-3 {
-  align-self: center;
-  border-left: 2px solid #91959b;
-  height: 50em;
-  margin: 0 2% 0 2%;
-  width: 5px;
+    align-self: center;
+    border-left: 2px solid #91959b;
+    height: 50em;
+    margin: 0 2% 0 2%;
+    width: 5px;
 }
 .skill-heading {
-  margin: 1.2em 0 0 0;
-  font-weight: 600;
-  font-family: "Sorts Mill Goudy";
-  color: #ebe7e0;
+    margin: 1.2em 0 0 0;
+    font-weight: 600;
+    font-family: "Sorts Mill Goudy";
+    color: #ebe7e0;
 }
 .skill-headings {
-  margin-left: 1em;
-  font-weight: 500;
-  color: #ebe7e0;
+    margin-left: 1em;
+    font-weight: 500;
+    color: #ebe7e0;
 }
 .skill-icons {
-  display: flex;
+    display: flex;
 }
 .skill-icons img {
-  margin: 0 0.9em 0 0.9em;
+    margin: 0 0.9em 0 0.9em;
 }
 .skill {
-  margin: 0.9em 0 0.9em 0;
+    margin: 0.9em 0 0.9em 0;
+}
+.skill .skill-tenure {
+    font-size: smaller;
+
+    margin: 1.2em 0 0.2em 0;
 }
 .ed-headings {
-  margin: 1em 0 0 1em;
-  font-weight: 500;
-  color: #ebe7e0;
+    font-weight: 500;
+    color: #ebe7e0;
 }
 .ed-details {
-  font-family: "Rubik";
-  margin-left: 1em;
-  font-weight: 300 !important;
+    font-family: "Rubik";
+    font-weight: 300 !important;
 }
 .ed-details p {
+    color: #b9d1e4;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+.ed-details h6 {
   color: #b9d1e4;
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+
+}
+.ed-details p:nth-child(2) {
+    font-size: medium;
+}
+#education-div{
+  width: 60%;
+}
+#experience-div {
+    margin-left: 0.5em;
 }
 
 /*________________________________*/
 /*MOBILE VERSION*/
 /*________________________________*/
 
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-hero-1,
+    .sub-hero-2,
+    .sub-hero-3 {
+        align-self: center;
+    }
+    .sub-hero-3 {
+        justify-content: center;
+        align-items: center;
+        margin: 0.5em 0;
+    }
+    .sub-hero-3 .line {
+        height: 10em;
+        width: 2px;
+    }
+    .basic-info {
+        padding: 1.5em 0;
+    }
+    .basic-info > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .basic-info > div > p {
+        padding: 0.5em 0;
+        text-align: center;
+    }
+    /*Super Heading*/
+    .super-heading {
+        font-family: "Sorts Mill Goudy" !important;
+        color: #ebe7e0 !important;
+        font-size: 3.5rem !important;
+        margin-left: 0.2em;
+    }
 
-@media (max-width: 768px) { 
-  .hero{
-    display: flex;
-    flex-direction: column;
-  }
-  .sub-hero-1, .sub-hero-2,.sub-hero-3{
-    align-self: center;
-  }
-  .sub-hero-3{
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em 0;
-  }
-  .sub-hero-3 .line{
-    height: 10em;
-    width: 2px;
-  }
-  .basic-info{
-    padding: 1.5em 0;
-  }
-  .basic-info > div{
-    flex-direction: column;
-    align-items: center;
-  }
-  .basic-info > div> p{
-    padding: 0.5em 0;
-    text-align: center;
-  }
-  /*Super Heading*/
-  .super-heading {
-    font-family: "Sorts Mill Goudy" !important;
-    color: #ebe7e0 !important;
-    font-size: 3.5rem !important;
-    margin-left: 0.2em;
-  }
+    /*ABOUT ME*/
+    .about-me-body {
+        flex-direction: column;
+    }
+    .about-me-para {
+        padding: 0 2%;
+    }
 
-  /*ABOUT ME*/
-  .about-me-body{
-    flex-direction: column;
-  }
-  .about-me-para{
-    padding: 0 2%;
-  }
-
-  /*RESUME*/
-  .resume-body{
-    flex-direction: column;
-  }
-  .skill-icons{
-    flex-direction: column;
-    
-  }
-  .icon-frame{
-    margin: 0.5em 0;
-    width: 100%;
-  }
+    /*RESUME*/
+    .resume-body {
+        flex-direction: column;
+    }
+    .skill-icons {
+        flex-direction: column;
+    }
+    .icon-frame {
+        margin: 0.5em 0;
+        width: 100%;
+    }
 }
