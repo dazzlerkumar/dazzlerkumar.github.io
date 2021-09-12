@@ -1,4 +1,8 @@
-
+import Image from "next/image";
+import twt from "../public/twitter.png";
+import lin from "../public/linkedin.png";
+import git from "../public/github.png";
+import medium from "../public/medium.png";
 
 export default function Intro() {
     return (
@@ -42,23 +46,20 @@ export default function Intro() {
                 </div>
             </div>
             {/*END OF HERO*/}
-            <div className="basic-info">
+            <div className="social-media d-flex align-items-center">
                 <div className="container d-flex justify-content-around">
-                    <p>
-                        Born
-                        <br />
-                        <span>2001</span>
-                    </p>
-                    <p>
-                        Experience
-                        <br />
-                        <span>1+ Years</span>
-                    </p>
-                    <p>
-                        Highest Qualifications
-                        <br />
-                        <span>10+2</span>
-                    </p>
+                    <a target="_blank" href="https://twitter.com/Dazzlerkumar">
+                        <Image src={twt} quality={100} alt="twitter Icon" />
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/dazzlerkumar/">
+                        <Image src={lin} quality={100} alt="LinkedIn Icon" />
+                    </a>
+                    <a target="_blank" href="https://github.com/dazzlerkumar">
+                        <Image src={git} quality={100} alt="twitter Icon" />
+                    </a>
+                    <a target="_blank" href="https://medium.com/@dazzlerkumar">
+                        <Image src={medium} quality={100} alt="twitter Icon" />
+                    </a>
                 </div>
             </div>
         </div>

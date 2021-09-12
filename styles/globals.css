@@ -76,6 +76,7 @@ p {
 }
 .hero {
     display: flex;
+    margin-top: 8vh;
 }
 .name-position-box {
     display: flex;
@@ -119,15 +120,12 @@ p {
     margin: 0 0 0.5em 0;
 }
 
-.basic-info {
+.social-media {
     padding: 4em 0;
+
     background-color: #1e2528;
 }
-.basic-info span {
-    font-size: large;
-    font-weight: 700;
-    color: #ebe7e0;
-}
+
 .about-me-div {
     background-color: #1e2528;
     padding-bottom: 1.5em;
@@ -227,15 +225,14 @@ p {
     font-weight: 300;
 }
 .ed-details h6 {
-  color: #b9d1e4;
+    color: #b9d1e4;
     margin-top: 0;
-
 }
 .ed-details p:nth-child(2) {
     font-size: medium;
 }
-#education-div{
-  width: 60%;
+#education-div {
+    width: 60%;
 }
 #experience-div {
     margin-left: 0.5em;
@@ -264,16 +261,8 @@ p {
         height: 10em;
         width: 2px;
     }
-    .basic-info {
+    .social-media {
         padding: 1.5em 0;
-    }
-    .basic-info > div {
-        flex-direction: column;
-        align-items: center;
-    }
-    .basic-info > div > p {
-        padding: 0.5em 0;
-        text-align: center;
     }
     /*Super Heading*/
     .super-heading {
