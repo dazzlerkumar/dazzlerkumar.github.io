@@ -202,7 +202,7 @@ function resume() {
                                     rel="noreferrer"
                                     href="https://drive.google.com/file/d/1reHamDrvvufz4xGTEliNDL9KMHWC3Dwd/view?usp=sharing"
                                 >
-                                    Resume
+                                   Download Resume
                                 </a>
                             </button>
                         </div>

@@ -136,7 +136,7 @@ p {
 .line-2 {
     align-self: center;
     border-left: 2px solid #91959b;
-    height: 25em;
+    height: 18em;
     margin: 0 2% 0 2%;
     width: 5px;
 }
@@ -147,18 +147,21 @@ p {
     font-size: xx-large;
     font-weight: 700;
 }
+
+.about-me-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
 .about-me-para p {
-    margin: 25px 0 25px 0;
+    margin: 0.5em 0 0 0;
 }
 .about-me-figs span {
     font-style: italic;
     font-weight: 500;
 }
 
-.about-me-para a:hover {
-    color: #ebe7e0;
-    background-color: #ff8059;
-}
 /*End of ABOUT ME*/
 /*_______________*/
 /*___RESUME___*/
@@ -242,11 +245,15 @@ p {
 .btn {
     margin: 1.5em;
     width: 10em;
-    color: #ebe7e0;
-    border-color: #ff8059;
+    color: #b9d1e4;
+    border-color: #1e2528;
 }
 .btn:hover {
-    background-color: #ff8059;
+    background-color: #1e2528;
+}
+.btn a:hover{
+    color: #b9d1e4;
+
 }
 /*END of RESUME*/
 /*_____________*/
