@@ -126,6 +126,8 @@ p {
     background-color: #1e2528;
 }
 
+/*___ABOUT ME___*/
+
 .about-me-div {
     background-color: #1e2528;
     padding-bottom: 1.5em;
@@ -152,24 +154,20 @@ p {
     font-style: italic;
     font-weight: 500;
 }
-.about-me-para .btn {
-    color: #ebe7e0;
-    border-color: #ff8059;
-}
-.about-me-para .btn:hover {
-    background-color: #ff8059;
-}
+
 .about-me-para a:hover {
     color: #ebe7e0;
     background-color: #ff8059;
 }
-
-/*RESUME*/
+/*End of ABOUT ME*/
+/*_______________*/
+/*___RESUME___*/
 .resume-div p {
     color: #b9d1e4;
 }
 .resume-body,
-.about-me-body {
+.about-me-body,
+.project-body {
     margin: 0.9em 0 1.5em 0;
 }
 
@@ -178,9 +176,9 @@ p {
     display: grid;
     place-items: center;
 }
-.lottie-container{
-  max-height: 400px;
-  max-height: 400px;
+.lottie-container {
+    max-height: 400px;
+    max-height: 400px;
 }
 .line-3 {
     align-self: center;
@@ -241,7 +239,84 @@ p {
 #experience-div {
     margin-left: 0.5em;
 }
+.btn {
+    margin: 1.5em;
+    width: 10em;
+    color: #ebe7e0;
+    border-color: #ff8059;
+}
+.btn:hover {
+    background-color: #ff8059;
+}
+/*END of RESUME*/
+/*_____________*/
+/*___PROJECTS__*/
+.project-div {
+    background-color: #1e2528;
+    padding-bottom: 1.5em;
+}
+.line-4 {
+    align-self: center;
+    border-left: 2px solid #91959b;
+    height: 5em;
+    margin: 0 2% 0 2%;
+    width: 5px;
+}
+.project-card {
+    border: solid #3c4649;
+    border-radius: 25px;
+    background: rgba(1, 1, 1, 0.5);
+    padding: 0.9vw;
+    width: 80%;
+    margin: 0.9em 0 0 0;
+}
+.project-card:hover {
+    transform: scale(1.01);
+}
+.project-img-div {
+    position: relative;
+    width: 320px;
+    height: 240px;
+    margin: 0.9em 0 0.9em 0;
+}
+.project-details {
+    margin: 0.9em 0 0.9em 0.9em;
+}
+.project-details p {
+    color: #b9d1e4;
+}
+.project-date {
+    font-size: small;
+    margin: 1.2em 0 0.2em 0;
+}
+.project-heading {
+    font-size: xx-large;
+    font-weight: 500;
+    color: #ebe7e0;
+    font-family: "Rubik";
+}
+.project-details p:nth-child(3) {
+    font-weight: 300 !important;
+}
+.project-links {
+    padding: 0.5em;
+}
+.project-links img:hover{
+    transform: scale(0.9);
+}
+.project-intro {
+    padding: 1.2em;
+}
+.project-intro q {
+    font-size: x-large;
+    color: #ebe7e0;
+}
+.project-intro figcaption {
+    font-size: small;
+    color: #b9d1e4;
+}
 
+/*End of PROJECTS*/
 /*________________________________*/
 /*MOBILE VERSION*/
 /*________________________________*/
@@ -293,6 +368,15 @@ p {
     }
     .icon-frame {
         margin: 0.5em 0;
+        width: 100%;
+    }
+    /*PROJECT*/
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-links {
+        flex-direction: row !important;
         width: 100%;
     }
 }

@@ -44,15 +44,7 @@ export default function Intro() {
                                     keep optimizing my daily life.
                                 </p>
                             </div>
-                            <button className="btn btn-lg">
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href="https://drive.google.com/file/d/1reHamDrvvufz4xGTEliNDL9KMHWC3Dwd/view?usp=sharing"
-                                >
-                                    Resume
-                                </a>
-                            </button>
+                            
                         </div>
                     </div>
                     {/*END of ABOUT ME BODY */}

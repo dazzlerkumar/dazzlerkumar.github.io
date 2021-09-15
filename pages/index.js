@@ -1,10 +1,15 @@
+//LIBS
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
+
+//COMPONENTS
 import Navigation from '../components/navigation'
 import Intro from '../components/intro'
 import Aboutme from '../components/aboutme'
 import Resume from '../components/resume'
+import Project from '../components/projects'
+
 
 
 
@@ -19,6 +24,7 @@ export default function Home() {
       <Intro/>
       <Aboutme/>
       <Resume/>
+      <Project/>
         
 
       <footer className={styles.footer}>
