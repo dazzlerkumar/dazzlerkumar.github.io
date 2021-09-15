@@ -66,4 +66,4 @@ If you have any,
 
 - Some Design and Implementation Ideas are taken from [WebDuck's OBER - Resume CV Landing Page](https://www.behance.net/gallery/121051775/OBER-Resume-CV-Landing-Page-PSD-XD-Template).
   
-- Icons by [Icon Mafia](https://iconscout.com/contributors/icon-mafia) on IconScout.
+- Icons by [Icon Mafia](https://iconscout.com/contributors/icon-mafia) and [Icon 54](https://iconscout.com/contributors/icon-54/) on IconScout.
