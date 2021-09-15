@@ -1,11 +1,17 @@
+//LIBS
+import { useState } from "react";
+
+//ASSETS
 import Image from "next/image";
 import prj1 from "../public/project_img1.png";
 import repoIcon from "../public/repo.png";
 import linkIcon from "../public/project_link.png";
-import bookmonger from "../public/bookmonger_ss.png"
-import certificate_icon from "../public/certificate_icon.png"
+import bookmonger from "../public/bookmonger_ss.png";
+import certificate_icon from "../public/certificate_icon.png";
 
-function projects() {
+function Projects() {
+    
+
     return (
         <div className="project-div">
             <div className="container">
@@ -17,8 +23,9 @@ function projects() {
                         <div className="line-4"></div>
                         <div className="project-intro">
                             <q>
-                                {" "}The application of acquired knowledge is the
-                                key to success.{" "}
+                                {" "}
+                                The application of acquired knowledge is the key
+                                to success.{" "}
                             </q>
                             <figcaption>
                                 — Mohd. Rashid,{" "}
@@ -30,7 +37,10 @@ function projects() {
                 {/*PROJECT CARDS*/}
                 <div className="card-flex d-flex flex-column align-items-center">
                     {/*1ST PROJECT CARD*/}
-                    <div className="project-card d-flex justify-content-center">
+                    <div
+                        className="project-card d-flex justify-content-center"
+                       
+                    >
                         {/*PROJECT IMAGE*/}
                         <div className="project-img-div">
                             <Image
@@ -51,16 +61,14 @@ function projects() {
                             <p>
                                 <ul>
                                     <li>
-                                        A minimal and elegant design with responsive capabilities.
+                                        A minimal and elegant design with
+                                        responsive capabilities.
                                     </li>
                                     <li>
-                                        Developed a static Front-End
-                                        product using NextJS and Bootstrap.
+                                        Developed a static Front-End product
+                                        using NextJS and Bootstrap.
                                     </li>
-                                    <li>
-                                        Deployed and hosted on Vercel.
-                                    </li>
-                                   
+                                    <li>Deployed and hosted on Vercel.</li>
                                 </ul>
                             </p>
                         </div>
@@ -95,7 +103,10 @@ function projects() {
                     </div>
                     {/*END of 1ST PROJECT CARD*/}
                     {/*2ST PROJECT CARD*/}
-                    <div className="project-card d-flex justify-content-center">
+                    <div
+                        className="project-card d-flex justify-content-center"
+                       
+                    >
                         {/*PROJECT IMAGE*/}
                         <div className="project-img-div">
                             <Image
@@ -125,9 +136,9 @@ function projects() {
                                         product using WAMP stack and Bootstrap.
                                     </li>
                                     <li>
-                                        Collaborated with my classmate to develop it.
+                                        Collaborated with my classmate to
+                                        develop it.
                                     </li>
-                                   
                                 </ul>
                             </p>
                         </div>
@@ -167,4 +178,4 @@ function projects() {
     );
 }
 
-export default projects;
+export default Projects;

@@ -125,7 +125,12 @@ p {
 
     background-color: #1e2528;
 }
-
+.social-media a:hover{
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    box-shadow:  20px 15px rgba(60,70,73,0.15);
+}
 /*___ABOUT ME___*/
 
 .about-me-div {
@@ -278,13 +283,18 @@ p {
     margin: 0.9em 0 0 0;
 }
 .project-card:hover {
+    transition: all 0.3s ease;
     transform: scale(1.01);
 }
+
 .project-img-div {
     position: relative;
     width: 320px;
     height: 240px;
     margin: 0.9em 0 0.9em 0;
+}
+.project-img-div img{
+    border-radius: 5px;
 }
 .project-details {
     margin: 0.9em 0 0.9em 0.9em;

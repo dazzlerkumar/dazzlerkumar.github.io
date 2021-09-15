@@ -1,7 +1,7 @@
 import animationData from "/public/webdesigner.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-export default function Intro() {
+export default function Aboutme() {
     return (
         <div className="about-me-div">
             <div className="container">
