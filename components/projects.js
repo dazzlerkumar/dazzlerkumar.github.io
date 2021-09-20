@@ -1,5 +1,7 @@
 //LIBS
 import { useState } from "react";
+//CUSTOM LIBs
+import { projects } from "../content/userData";
 
 //ASSETS
 import Image from "next/image";
@@ -36,16 +38,18 @@ function Projects() {
                 </div>
                 {/*PROJECT CARDS*/}
                 <div className="card-flex d-flex flex-column align-items-center">
-                    {/*1ST PROJECT CARD*/}
+                {
+                    projects.map((x, i) => 
+                    
                     <div
                         className="project-card d-flex justify-content-center"
-                       
+                       key={i}
                     >
                         {/*PROJECT IMAGE*/}
                         <div className="project-img-div">
                             <Image
-                                alt="Mountains"
-                                src={prj1}
+                                alt="Project Image"
+                                src={x.projectImg}
                                 layout="fill"
                                 objectFit="cover"
                                 quality={100}
@@ -53,22 +57,22 @@ function Projects() {
                         </div>
                         {/*PROJECT DETAILS*/}
                         <div className="project-details">
-                            <p className="project-date">Jun 2021 - Aug 2021</p>
+                            <p className="project-date">{x.projectTenure}</p>
                             <h4 className="project-heading">
-                                Resume Styled Portfolio
+                                {x.projectName}
                             </h4>
 
                             <p>
                                 <ul>
                                     <li>
-                                        A minimal and elegant design with
-                                        responsive capabilities.
+                                        {x.desc_1}
                                     </li>
                                     <li>
-                                        Developed a static Front-End product
-                                        using NextJS and Bootstrap.
+                                        {x.desc_2}
                                     </li>
-                                    <li>Deployed and hosted on Vercel.</li>
+                                    <li>
+                                        {x.desc_3}
+                                    </li>
                                 </ul>
                             </p>
                         </div>
@@ -76,7 +80,7 @@ function Projects() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://dazzlerkumar.vercel.app/"
+                                href={x.projectLink}
                             >
                                 <Image
                                     src={linkIcon}
@@ -89,7 +93,7 @@ function Projects() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://github.com/dazzlerkumar/dazzlerkumar.github.io"
+                                href={x.repoLink}
                             >
                                 <Image
                                     src={repoIcon}
@@ -101,77 +105,9 @@ function Projects() {
                             </a>
                         </div>
                     </div>
-                    {/*END of 1ST PROJECT CARD*/}
-                    {/*2ST PROJECT CARD*/}
-                    <div
-                        className="project-card d-flex justify-content-center"
-                       
-                    >
-                        {/*PROJECT IMAGE*/}
-                        <div className="project-img-div">
-                            <Image
-                                alt="BookMonger Screenshot"
-                                src={bookmonger}
-                                layout="fill"
-                                objectFit="cover"
-                                quality={100}
-                                width={320}
-                                height={240}
-                            />
-                        </div>
-                        {/*PROJECT DETAILS*/}
-                        <div className="project-details">
-                            <p className="project-date">Jun 2019 - Jul 2019</p>
-                            <h4 className="project-heading">
-                                BookMonger - A Book Exchange portal
-                            </h4>
+                    
 
-                            <p>
-                                <ul>
-                                    <li>
-                                        A heaven website for avid book readers.
-                                    </li>
-                                    <li>
-                                        Developed a dynamic responsive full
-                                        product using WAMP stack and Bootstrap.
-                                    </li>
-                                    <li>
-                                        Collaborated with my classmate to
-                                        develop it.
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div className="project-links d-flex flex-column justify-content-around">
-                            <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://drive.google.com/file/d/1anlup4VBHpdcGsotbAPDpnxkBCDVWhr5/view?usp=sharing"
-                            >
-                                <Image
-                                    src={certificate_icon}
-                                    quality={100}
-                                    width={36}
-                                    height={36}
-                                    alt="Project Link"
-                                />
-                            </a>
-                            <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href="https://github.com/dazzlerkumar/bookmonger"
-                            >
-                                <Image
-                                    src={repoIcon}
-                                    quality={100}
-                                    width={36}
-                                    height={36}
-                                    alt="Repo Link"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    {/*END of 2ST PROJECT CARD*/}
+                    )}
                 </div>
             </div>
         </div>
@@ -179,3 +115,6 @@ function Projects() {
 }
 
 export default Projects;
+/*
+
+*/

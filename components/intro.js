@@ -1,10 +1,17 @@
+//CUSTOM LIBs
+import {socialMedia, introduction} from "../content/userData"
+
+
 import Image from "next/image";
 import twt from "../public/twitter.png";
 import lin from "../public/linkedin.png";
 import git from "../public/github.png";
 import medium from "../public/medium.png";
 
+
+
 export default function Intro() {
+    
     return (
         <div className="intro-div">
             {/*Start OF HERO*/}
@@ -14,12 +21,15 @@ export default function Intro() {
                     <div className="sub-hero-1 col-md-4 d-flex justify-content-end align-items-end">
                         <div className="name-position-box">
                             <p className="current-profile">
-                                Frontend Developer
+                               {introduction.profession}
                             </p>
                             <p className="name">
-                                Deepak
+                                {introduction.fname}
                                 <br />
-                                Kumar
+                                {introduction.mname}
+                                {/*Implies the line breaker only if there is any middle-name*/}
+                                {introduction.mname === ''?'':<br/>}
+                                {introduction.sname}
                             </p>
                         </div>
                     </div>
@@ -28,8 +38,8 @@ export default function Intro() {
                     <div className="sub-hero-2 col-md-4  profile-pic-div">
                         <img
                             className="profilePic"
-                            src="minepic.png"
-                            alt="Picture of the author"
+                            src={introduction.profilePicUrl}
+                            alt="Picture of the Developer"
                         />
                     </div>
                     {/*End of Main Profile*/}
@@ -37,10 +47,7 @@ export default function Intro() {
                     <div className="sub-hero-3 col-md-4">
                         <div className="line"></div>
                         <p>
-                            I'm currently studying
-                            <br /> Computer Science Engineering <br />
-                            at BBDNITM, Lucknow.
-                            <br /> and free-lancing as a Frontend Developer.
+                            {introduction.impressum}
                         </p>
                     </div>
                 </div>
@@ -48,16 +55,16 @@ export default function Intro() {
             {/*END OF HERO*/}
             <div className="social-media d-flex align-items-center">
                 <div className="container d-flex justify-content-around">
-                    <a target="_blank" rel="noreferrer" href="https://twitter.com/Dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href={socialMedia.twitter}>
                         <Image src={twt} quality={100} alt="twitter Icon" />
                     </a>
-                    <a target="_blank"  rel="noreferrer" href="https://www.linkedin.com/in/dazzlerkumar/">
+                    <a target="_blank"  rel="noreferrer" href={socialMedia.linkedin}>
                         <Image src={lin} quality={100} alt="LinkedIn Icon" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href={socialMedia.github}>
                         <Image src={git} quality={100} alt="twitter Icon" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://medium.com/@dazzlerkumar">
+                    <a target="_blank" rel="noreferrer" href={socialMedia.medium}>
                         <Image src={medium} quality={100} alt="twitter Icon" />
                     </a>
                 </div>
