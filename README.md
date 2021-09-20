@@ -37,7 +37,8 @@
 - Now, the project is ready to use.
 - You can check it using `npm run dev`, it will locally host the website.
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the website running.
-
+- You can replace my details with yours by changing the objects in `content/userData.js`
+- <strong>Tada!!</strong> Your portfolio is ready to deploy in just 10 mins or less...
 ## Deploy on Vercel/Git Pages
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
