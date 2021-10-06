@@ -1,9 +1,9 @@
 import animationData from "/public/webdesigner.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-export default function Aboutme() {
+export default function Aboutme({sectionID}) {
     return (
-        <div className="about-me-div">
+        <div className="about-me-div" id={sectionID}>
             <div className="container">
                 {/*SUPER HEADING*/}
                 <p className="super-heading">About Me</p>

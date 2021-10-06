@@ -10,10 +10,10 @@ import medium from "../public/medium.png";
 
 
 
-export default function Intro() {
+export default function Intro({sectionID}) {
     
     return (
-        <div className="intro-div">
+        <div className="intro-div" id={sectionID}>
             {/*Start OF HERO*/}
             <div className="container">
                 <div className="hero">

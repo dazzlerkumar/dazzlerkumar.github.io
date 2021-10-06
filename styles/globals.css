@@ -35,9 +35,8 @@ p {
 /*NAV MENU*/
 /*NAV BAR*/
 .nav-div {
+    background-color: red;
     margin-bottom: 3.5rem;
-}
-.nav-menu {
 }
 .nav-line {
     height: 0.1rem;
@@ -50,9 +49,12 @@ p {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 1rem;
+    top:1rem;
     width: 100%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+   
 }
+/*
 .nav-link {
     font-size: 2.5rem;
     font-family: "Sorts Mill Goudy", sans-serif;
@@ -62,7 +64,7 @@ p {
     z-index: 100;
     margin: 0 2.5rem;
     visibility: hidden;
-}
+}*/
 .nav-link:hover {
     color: #ff8059;
 }

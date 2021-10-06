@@ -1,20 +1,19 @@
 import styled from "styled-components";
 import { useState } from "react";
-export default function navigation() {
+export default function Navigation() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [click, setclick] = useState('visible');
+    const [click, setclick] = useState("visible");
 
-    function navClickFunc(){
-        
-        if(click === 'visible'){
-            setclick('hidden');
-            console.log(click)
-        }
-        else{
-            setclick('visible');
-            console.log(click)
-        }
-    }
+
+    const navClickFunc = () => {
+        console.log("Menu " + click);
+        setclick("hidden");
+    };
+    const hideNavLinks = () => {
+        console.log("Link " + click);
+        setclick("visible");
+    };
+
     //Styled Component
     const NavMenu = styled.div`
         display: grid;
@@ -24,34 +23,43 @@ export default function navigation() {
         height: 7rem;
         top: 0;
         right: 6rem;
-        visibility:${props => props.visible};
     `;
-    
+    const NavLink = styled.a`
+        font-size: 1.5rem;
+        font-family: "Sorts Mill Goudy", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: #ebe7e0;
+        z-index: 100;    
+    `;
     return (
         <div className="nav-div">
-            <NavMenu visible={click} onClick={navClickFunc}>
-                <div>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
-                    <div className="nav-line"></div>
-                </div>
-            </NavMenu>
-            {/*
-            <div className="nav-menu" onClick={(e)=> setclick('hidden')}>
-                
-            </div>*/}
+            {click === "visible" ? (
+                <NavMenu onMouseOver={() => navClickFunc()}>
+                    <div>
+                        <div className="nav-line"></div>
+                        <div className="nav-line"></div>
+                        <div className="nav-line"></div>
+                    </div>
+                </NavMenu>
+            ) : (
+                <nav className="navbar" onMouseLeave={() => hideNavLinks()}>
 
-            <nav className="navbar">
-                <a href="#aboutme" className="nav-link">
-                    About Me
-                </a>
-                <a href="#Resume" className="nav-link">
-                    About Me
-                </a>
-                <a href="#aboutme" className="nav-link">
-                    About Me
-                </a>
-            </nav>
+                    <NavLink href="#top" className="nav-link">
+                        Home
+                    </NavLink>
+                    <NavLink href="#aboutme" className="nav-link">
+                        About Me
+                    </NavLink>
+                    <NavLink href="#resume" className="nav-link">
+                        Resume
+                    </NavLink>
+                    <NavLink href="#project" className="nav-link">
+                        Projects
+                    </NavLink>
+                </nav>
+            )}
         </div>
     );
 }
+
