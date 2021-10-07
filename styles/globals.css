@@ -45,26 +45,26 @@ p {
     margin: 0.5rem 0;
     box-shadow: 0.3rem 0.2rem #1e2528;
 }
+.hide-nav-menu{
+    display: none;
+    visibility: hidden;
+    transform: translateX(50rem);
+    transition: ease-out 1s;
+}
 .navbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
     top:1rem;
     width: 100%;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-   
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
 }
-/*
-.nav-link {
-    font-size: 2.5rem;
-    font-family: "Sorts Mill Goudy", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: #ebe7e0;
-    z-index: 100;
-    margin: 0 2.5rem;
+.hide-navbar{
+    display: none;
     visibility: hidden;
-}*/
+    transform: translateX(50rem);
+}
+
 .nav-link:hover {
     color: #ff8059;
 }

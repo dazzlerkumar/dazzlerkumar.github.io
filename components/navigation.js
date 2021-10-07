@@ -2,16 +2,19 @@ import styled from "styled-components";
 import { useState } from "react";
 export default function Navigation() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [click, setclick] = useState("visible");
+    const [MenuClass, setMenuClass] = useState("");
+    const [BarClass, setBarClass] = useState("hide-navbar");
 
 
     const navClickFunc = () => {
-        console.log("Menu " + click);
-        setclick("hidden");
+        //console.log("Menu " + click);
+        setMenuClass("hide-nav-menu")
+        setBarClass("navbar")
     };
     const hideNavLinks = () => {
-        console.log("Link " + click);
-        setclick("visible");
+        //console.log("Link " + click);
+        setMenuClass("")
+        setBarClass("hide-navbar")
     };
 
     //Styled Component
@@ -34,16 +37,16 @@ export default function Navigation() {
     `;
     return (
         <div className="nav-div">
-            {click === "visible" ? (
-                <NavMenu onMouseOver={() => navClickFunc()}>
+            
+                <NavMenu className={MenuClass}  onClick={() => navClickFunc()}>
                     <div>
                         <div className="nav-line"></div>
                         <div className="nav-line"></div>
                         <div className="nav-line"></div>
                     </div>
                 </NavMenu>
-            ) : (
-                <nav className="navbar" onMouseLeave={() => hideNavLinks()}>
+            
+                <nav className={BarClass} onClick={() => hideNavLinks()}>
 
                     <NavLink href="#top" className="nav-link">
                         Home
@@ -58,7 +61,7 @@ export default function Navigation() {
                         Projects
                     </NavLink>
                 </nav>
-            )}
+            
         </div>
     );
 }
