@@ -11,11 +11,11 @@ import linkIcon from "../public/project_link.png";
 import bookmonger from "../public/bookmonger_ss.png";
 import certificate_icon from "../public/certificate_icon.png";
 
-function Projects() {
+function Projects({sectionID}) {
     
 
     return (
-        <div className="project-div">
+        <div className="project-div" id={sectionID}>
             <div className="container">
                 <p className="super-heading">My Projects</p>
                 {/*PROJECT INTRO*/}

@@ -5,10 +5,10 @@ import { educationDetails, experienceDetails, skillStack, resumeLink } from "../
 import animationData from "/public/books.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-function Resume() {
+function Resume({sectionID}) {
     
     return (
-        <div className="resume-div">
+        <div className="resume-div" id={sectionID}>
             <div className="container">
                 <p className="super-heading">Resume</p>
                 <div className="resume-body d-flex justify-content-center">
