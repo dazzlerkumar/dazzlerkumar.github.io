@@ -42,7 +42,7 @@
 - <strong>Tada!!</strong> Your portfolio is ready to deploy in just 10 mins or less...
 
 
-## Deploy on Vercel/Git Pages
+## Deploy on Vercel/Git Pages 🚀
 
 The easiest way to deploy your [Next.js](https://nextjs.org/) app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
