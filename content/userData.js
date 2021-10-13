@@ -95,16 +95,6 @@ export const resumeLink = {
 
 export const projects = [
     {
-        projectImg: "/project_img1.png",
-        projectTenure: "Jun 2021 - Aug 2021",
-        projectName: "Resume Styled Portfolio",
-        desc_1: " A minimal and elegant design with responsive capabilities.",
-        desc_2: " Developed a static Front-End product using NextJS and Bootstrap.",
-        desc_3: "Deployed and hosted on Vercel.",
-        projectLink: "https://dazzlerkumar.vercel.app/",
-        repoLink: "https://github.com/dazzlerkumar/dazzlerkumar.github.io",
-    },
-    {
         projectImg: "/tgit.png",
         projectTenure: "Oct 2019 - Present",
         projectName: "The Great Indian Traffic - Indian Road Guide",
@@ -114,6 +104,17 @@ export const projects = [
         projectLink:"https://tgit.vercel.app/",
         repoLink: "https://github.com/dazzlerkumar/The-Great-Indian-Traffic/",
     },
+    {
+        projectImg: "/project_img1.png",
+        projectTenure: "Jun 2021 - Aug 2021",
+        projectName: "Resume Styled Portfolio",
+        desc_1: " A minimal and elegant design with responsive capabilities.",
+        desc_2: " Developed a static Front-End product using NextJS and Bootstrap.",
+        desc_3: "Deployed and hosted on Vercel.",
+        projectLink: "https://dazzlerkumar.vercel.app/",
+        repoLink: "https://github.com/dazzlerkumar/dazzlerkumar.github.io",
+    },
+    
     {
         projectImg: "/bookmonger_ss.png",
         projectTenure: "Jun 2019 - Jul 2019",

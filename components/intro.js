@@ -2,7 +2,9 @@
 import {socialMedia, introduction} from "../content/userData"
 
 
+
 import Image from "next/image";
+import LightSpeed from 'react-reveal/LightSpeed';
 import twt from "../public/twitter.png";
 import lin from "../public/linkedin.png";
 import git from "../public/github.png";
@@ -54,6 +56,7 @@ export default function Intro({sectionID}) {
             </div>
             {/*END OF HERO*/}
             <div className="social-media d-flex align-items-center">
+                <LightSpeed left duration={2000}>
                 <div className="container d-flex justify-content-around">
                     <a target="_blank" rel="noreferrer" href={socialMedia.twitter}>
                         <Image src={twt} quality={100} alt="twitter Icon" />
@@ -68,6 +71,7 @@ export default function Intro({sectionID}) {
                         <Image src={medium} quality={100} alt="twitter Icon" />
                     </a>
                 </div>
+                </LightSpeed>
             </div>
         </div>
     );

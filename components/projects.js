@@ -1,5 +1,7 @@
 //LIBS
 import { useState } from "react";
+import Slide from 'react-reveal/Slide';
+
 //CUSTOM LIBs
 import { projects } from "../content/userData";
 
@@ -37,7 +39,9 @@ function Projects({sectionID}) {
                     </div>
                 </div>
                 {/*PROJECT CARDS*/}
+                <Slide left cascade>
                 <div className="card-flex d-flex flex-column align-items-center">
+                   
                 {
                     projects.map((x, i) => 
                     
@@ -108,7 +112,9 @@ function Projects({sectionID}) {
                     
 
                     )}
+                    
                 </div>
+                </Slide>
             </div>
         </div>
     );
