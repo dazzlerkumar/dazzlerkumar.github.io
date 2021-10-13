@@ -90,7 +90,7 @@ export const experienceDetails = {
     },
 };
 export const resumeLink = {
-    link: "https://drive.google.com/file/d/1reHamDrvvufz4xGTEliNDL9KMHWC3Dwd/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1UdD0SVCkoXlPefBwXotnJNfqos6TPt_M/view?usp=sharing",
 };
 
 export const projects = [
@@ -105,6 +105,16 @@ export const projects = [
         repoLink: "https://github.com/dazzlerkumar/dazzlerkumar.github.io",
     },
     {
+        projectImg: "/tgit.png",
+        projectTenure: "Oct 2019 - Present",
+        projectName: "The Great Indian Traffic - Indian Road Guide",
+        desc_1: "Making Indian roads safer.",
+        desc_2: "Developed a static Front-End product using NextJS and Tailwind CSS.",
+        desc_3: "Open Sourced it and participated in Hacktoberfest 2021.",
+        projectLink:"https://tgit.vercel.app/",
+        repoLink: "https://github.com/dazzlerkumar/The-Great-Indian-Traffic/",
+    },
+    {
         projectImg: "/bookmonger_ss.png",
         projectTenure: "Jun 2019 - Jul 2019",
         projectName: "BookMonger - A Book Exchange portal",
@@ -114,5 +124,6 @@ export const projects = [
         projectLink:
             "https://drive.google.com/file/d/1anlup4VBHpdcGsotbAPDpnxkBCDVWhr5/view?usp=sharing",
         repoLink: "https://github.com/dazzlerkumar/bookmonger",
-    },
+    }
+    
 ];

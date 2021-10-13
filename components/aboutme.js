@@ -30,11 +30,9 @@ export default function Aboutme({sectionID}) {
                                 </span>
                             </p>
                             <p>
-                                Worked as a part-time Front-End Website
-                                Developer for about 1 year in two start-ups with
-                                experience building User Interfaces of websites
-                                using Angular 12 and NextJs (ReactJS)
-                                frameworks.
+                            Worked as a part-time Front-End Website Developer for about 3 months in a start-up with 
+experience building User Interfaces of the website using the NextJS (ReactJS) framework.
+
                             </p>
                             <p>
                                 I describe myself as a focused, fast learner,
