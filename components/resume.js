@@ -4,7 +4,7 @@ import { educationDetails, experienceDetails, skillStack, resumeLink } from "../
 
 import animationData from "/public/books.json";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Fade from 'react-reveal/Fade';
+
 
 
 function Resume({sectionID}) {
@@ -39,7 +39,7 @@ function Resume({sectionID}) {
                             {skillStack.frontendStack ? 
                             <div className="skill">
                                 <h4 className="skill-headings">Front End</h4>
-                                <Fade right cascade>
+                               
                                 <div className="skill-icons">
                                     <div className="d-flex icon-frame">
                                         <img src={skillStack.frontendStack.html} />
@@ -56,32 +56,32 @@ function Resume({sectionID}) {
                                         <img src={skillStack.frontendStack.bootstrap}/>
                                     </div>
                                 </div>
-                                </Fade>
+                               
                             </div>
                             :''}
                             {skillStack.backendStack ? 
                             <div className="skill">
                                 <h4 className="skill-headings">Back End</h4>
-                                <Fade right cascade delay={1500}>
+                               
                                 <div className="d-flex skill-icons">
                                     <div className="d-flex icon-frame">
                                         <img src={skillStack.backendStack.node}/>
                                     </div>
                                 </div>
-                                </Fade>
+                               
                             </div>
                             : ''}
                             {skillStack.tools ? 
                             <div className="skill">
                                 <h4 className="skill-headings">Tools</h4>
-                                <Fade right cascade delay={2000}>
+                                
                                 <div className="d-flex skill-icons">
                                     <div className="d-flex icon-frame">
                                         <img src={skillStack.tools.npm} />
                                         <img src={skillStack.tools.git}/>
                                     </div>
                                 </div>
-                                </Fade>
+                                
                             </div>
                             :
                             ''}
