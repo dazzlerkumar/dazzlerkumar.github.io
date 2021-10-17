@@ -39,7 +39,7 @@ function Projects({sectionID}) {
                     </div>
                 </div>
                 {/*PROJECT CARDS*/}
-                <Slide left cascade>
+                
                 <div className="card-flex d-flex flex-column align-items-center">
                    
                 {
@@ -56,7 +56,8 @@ function Projects({sectionID}) {
                                 src={x.projectImg}
                                 layout="fill"
                                 objectFit="cover"
-                                quality={100}
+                                quality={75}
+                              
                             />
                         </div>
                         {/*PROJECT DETAILS*/}
@@ -114,7 +115,7 @@ function Projects({sectionID}) {
                     )}
                     
                 </div>
-                </Slide>
+                
             </div>
         </div>
     );
