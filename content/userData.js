@@ -90,7 +90,7 @@ export const experienceDetails = {
     },
 };
 export const resumeLink = {
-    link: "https://drive.google.com/file/d/1UdD0SVCkoXlPefBwXotnJNfqos6TPt_M/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1bluE5IvqAnDakfF2-FoQULJntfxDq1UZ/view?usp=sharing",
 };
 
 export const projects = [
