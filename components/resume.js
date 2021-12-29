@@ -33,9 +33,9 @@ function Resume({sectionID}) {
                         <div className="about-me-para">
                             <div>
                                 <p>
-                                    Iapos;ve done my schooling from Kendriya
+                                    I{'`'}ve done my schooling from Kendriya
                                     Vidyalaya, Gomti Nagar, Lucknow, and
-                                    currently pursuing Bachelor'apos;s of Technology
+                                    currently pursuing Bachelor{'`'}s of Technology
                                     in Computer Science Engineering from Babu
                                     Banarasi Das National Institute of
                                     Technology and Management.
@@ -227,7 +227,7 @@ function Resume({sectionID}) {
                                 </div>
                                 {/*End of Experience*/}
                             </div>
-                            <button className="btn btn-lg">
+                            <button type="button" className="btn btn-lg">
                                 <a
                                     target="_blank"
                                     rel="noreferrer"
