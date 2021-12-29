@@ -18,9 +18,9 @@ export default function Home() {
     <div>
       <Head>
         <title>Deepak Kumar</title>
-        <meta name="author" content="Deepak Kumar">
+        <meta name="author" content="Deepak Kumar"/>
         <meta name="Description" content="Deepak Kumar aka Dazzler kumar | Frontend Developer | If you can think it, I can web it." />
-        <meta name="keywords" content="Deepak Kumar, Dazzler Kumar, Frontend developer, website developer, bbdnitm, babu banarasi das, lucknow, web developer in lucknow,  "></meta>
+        <meta name="keywords" content="Deepak Kumar, Dazzler Kumar, Frontend developer, website developer, bbdnitm, babu banarasi das, lucknow, web developer in lucknow,  "/>
         <link rel="icon" href="/indian-man.png" />
       </Head>
       <Intro sectionID={"top"}/>
