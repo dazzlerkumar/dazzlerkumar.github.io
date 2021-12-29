@@ -95,6 +95,7 @@ export const resumeLink = {
 
 export const projects = [
     {
+        id:1,
         projectImg: "/tgit.png",
         projectTenure: "Oct 2019 - Present",
         projectName: "The Great Indian Traffic - Indian Road Guide",
@@ -104,7 +105,9 @@ export const projects = [
         projectLink:"https://tgit.vercel.app/",
         repoLink: "https://github.com/dazzlerkumar/The-Great-Indian-Traffic/",
     },
+
     {
+        id:2,
         projectImg: "/project_img1.png",
         projectTenure: "Jun 2021 - Aug 2021",
         projectName: "Resume Styled Portfolio",

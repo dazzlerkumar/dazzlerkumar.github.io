@@ -46,7 +46,7 @@ export default function Navigation() {
                     </div>
                 </NavMenu>
             
-                <nav className={BarClass} onClick={() => hideNavLinks()}>
+                <nav className={BarClass} onClick={() => hideNavLinks()} onKeyUp={hideNavLinks()} aria-hidden>
 
                     <NavLink href="#top" className="nav-link">
                         Home

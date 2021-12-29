@@ -1,21 +1,15 @@
 //LIBS
-import { useState } from "react";
-import Slide from 'react-reveal/Slide';
 
 //CUSTOM LIBs
 import { projects } from "../content/userData";
 
 //ASSETS
 import Image from "next/image";
-import prj1 from "../public/project_img1.png";
+
 import repoIcon from "../public/repo.png";
 import linkIcon from "../public/project_link.png";
-import bookmonger from "../public/bookmonger_ss.png";
-import certificate_icon from "../public/certificate_icon.png";
 
-function Projects({sectionID}) {
-    
-
+function Projects({ sectionID }) {
     return (
         <div className="project-div" id={sectionID}>
             <div className="container">
@@ -39,89 +33,74 @@ function Projects({sectionID}) {
                     </div>
                 </div>
                 {/*PROJECT CARDS*/}
-                
+
                 <div className="card-flex d-flex flex-column align-items-center">
-                   
-                {
-                    projects.map((x, i) => 
-                    
-                    <div
-                        className="project-card d-flex justify-content-center"
-                       key={i}
-                    >
-                        {/*PROJECT IMAGE*/}
-                        <div className="project-img-div">
-                            <Image
-                                alt="Project Image"
-                                src={x.projectImg}
-                                layout="fill"
-                                objectFit="cover"
-                                quality={75}
-                              
-                            />
-                        </div>
-                        {/*PROJECT DETAILS*/}
-                        <div className="project-details">
-                            <p className="project-date">{x.projectTenure}</p>
-                            <h4 className="project-heading">
-                                {x.projectName}
-                            </h4>
-
-                            <p>
-                                <ul>
-                                    <li>
-                                        {x.desc_1}
-                                    </li>
-                                    <li>
-                                        {x.desc_2}
-                                    </li>
-                                    <li>
-                                        {x.desc_3}
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                        <div className="project-links d-flex flex-column justify-content-around">
-                            <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href={x.projectLink}
-                            >
+                    {projects.map((x, i) => (
+                        <div
+                            className="project-card d-flex justify-content-center"
+                            key={x.id}
+                        >
+                            {/*PROJECT IMAGE*/}
+                            <div className="project-img-div">
                                 <Image
-                                    src={linkIcon}
-                                    quality={100}
-                                    width={36}
-                                    height={36}
-                                    alt="Project Link"
+                                    alt="Project Image"
+                                    src={x.projectImg}
+                                    layout="fill"
+                                    objectFit="cover"
+                                    quality={75}
                                 />
-                            </a>
-                            <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href={x.repoLink}
-                            >
-                                <Image
-                                    src={repoIcon}
-                                    quality={100}
-                                    width={36}
-                                    height={36}
-                                    alt="Repo Link"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    
+                            </div>
+                            {/*PROJECT DETAILS*/}
+                            <div className="project-details">
+                                <p className="project-date">
+                                    {x.projectTenure}
+                                </p>
+                                <h4 className="project-heading">
+                                    {x.projectName}
+                                </h4>
 
-                    )}
-                    
+                                <p>
+                                    <ul>
+                                        <li>{x.desc_1}</li>
+                                        <li>{x.desc_2}</li>
+                                        <li>{x.desc_3}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div className="project-links d-flex flex-column justify-content-around">
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={x.projectLink}
+                                >
+                                    <Image
+                                        src={linkIcon}
+                                        quality={100}
+                                        width={36}
+                                        height={36}
+                                        alt="Project Link"
+                                    />
+                                </a>
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href={x.repoLink}
+                                >
+                                    <Image
+                                        src={repoIcon}
+                                        quality={100}
+                                        width={36}
+                                        height={36}
+                                        alt="Repo Link"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                
             </div>
         </div>
     );
 }
 
 export default Projects;
-/*
-
-*/

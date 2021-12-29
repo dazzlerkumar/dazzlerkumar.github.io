@@ -27,7 +27,7 @@ function Resume({sectionID}) {
                         <div className="about-me-para">
                             <div>
                                 <p>
-                                    I've done my schooling from Kendriya
+                                    Iapos;ve done my schooling from Kendriya
                                     Vidyalaya, Gomti Nagar, Lucknow, and
                                     currently pursuing Bachelor's of Technology
                                     in Computer Science Engineering from Babu
@@ -42,18 +42,18 @@ function Resume({sectionID}) {
                                
                                 <div className="skill-icons">
                                     <div className="d-flex icon-frame">
-                                        <img src={skillStack.frontendStack.html} />
-                                        <img src={skillStack.frontendStack.css}/>
-                                        <img src={skillStack.frontendStack.js} />
+                                        <img alt={skillStack.frontendStack.html} src={skillStack.frontendStack.html} />
+                                        <img alt={skillStack.frontendStack.css} src={skillStack.frontendStack.css}/>
+                                        <img alt={skillStack.frontendStack.js} src={skillStack.frontendStack.js} />
                                     </div>
                                     <div className="d-flex icon-frame">
-                                        <img src={skillStack.frontendStack.ts} />
+                                        <img alt={skillStack.frontendStack.ts} src={skillStack.frontendStack.ts} />
 
-                                        <img src={skillStack.frontendStack.angular} />
-                                        <img src={skillStack.frontendStack.react} />
+                                        <img alt={skillStack.frontendStack.angular} src={skillStack.frontendStack.angular} />
+                                        <img alt={skillStack.frontendStack.reactjs} src={skillStack.frontendStack.react} />
                                     </div>
                                     <div className="d-flex icon-frame">
-                                        <img src={skillStack.frontendStack.bootstrap}/>
+                                        <img alt={skillStack.frontendStack.bootstrap} src={skillStack.frontendStack.bootstrap}/>
                                     </div>
                                 </div>
                                
@@ -65,7 +65,7 @@ function Resume({sectionID}) {
                                
                                 <div className="d-flex skill-icons">
                                     <div className="d-flex icon-frame">
-                                        <img src={skillStack.backendStack.node}/>
+                                        <img alt={skillStack.backendStack.node} src={skillStack.backendStack.node}/>
                                     </div>
                                 </div>
                                
@@ -77,8 +77,8 @@ function Resume({sectionID}) {
                                 
                                 <div className="d-flex skill-icons">
                                     <div className="d-flex icon-frame">
-                                        <img src={skillStack.tools.npm} />
-                                        <img src={skillStack.tools.git}/>
+                                        <img alt={skillStack.backendStack.npm} src={skillStack.tools.npm} />
+                                        <img alt={skillStack.backendStack.git} src={skillStack.tools.git}/>
                                     </div>
                                 </div>
                                 
