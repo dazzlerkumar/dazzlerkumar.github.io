@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 
 //COMPONENTS
-//import Navigation from '../components/navigation'
+
 import Intro from '../components/intro'
 import Aboutme from '../components/aboutme'
 import Resume from '../components/resume'
