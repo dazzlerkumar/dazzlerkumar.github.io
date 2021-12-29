@@ -9,6 +9,14 @@ import Image from "next/image";
 import repoIcon from "../public/repo.png";
 import linkIcon from "../public/project_link.png";
 
+/**
+ * 
+ * Resume Section 
+ * @param sectionID is given to the root element of Resume Functional Component
+ * Returns a list of projects done by the person
+ *
+ */
+
 function Projects({ sectionID }) {
     return (
         <div className="project-div" id={sectionID}>

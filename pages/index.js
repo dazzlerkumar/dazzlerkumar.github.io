@@ -11,7 +11,11 @@ import Resume from '../components/resume'
 import Project from '../components/projects'
 
 
-
+/**
+ * 
+ * Home page where all the sections are being called as Compnents
+ *
+ */
 
 export default function Home() {
   return (

@@ -1,6 +1,14 @@
 import animationData from "/public/webdesigner.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
+/**
+ * 
+ * Resume Section 
+ * @param sectionID is given to the root element of Resume Functional Component
+ * Returns brief summary about the person
+ *
+ */
+
 export default function Aboutme({sectionID}) {
     return (
         <div className="about-me-div" id={sectionID}>

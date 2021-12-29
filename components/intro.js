@@ -10,6 +10,18 @@ import lin from "../public/linkedin.png";
 import git from "../public/github.png";
 import medium from "../public/medium.png";
 
+/**
+ * 
+ * Resume Section 
+ * @param sectionID is given to the root element of Resume Functional Component
+ * This is the Hero and takes the whole viewport 
+ * displays the name and designation of the person
+ * displays the person's picture
+ * displays a tagline/slogan 
+ * all 3 things are stacked vertically using flexbox
+ *
+ */
+
 
 
 export default function Intro({sectionID}) {

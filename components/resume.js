@@ -5,7 +5,13 @@ import { educationDetails, experienceDetails, skillStack, resumeLink } from "../
 import animationData from "/public/books.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-
+/**
+ * 
+ * Resume Section 
+ * @param sectionID is given to the root element of Resume Functional Component
+ * Returns the details of the person such as Education, Experience and skills
+ *
+ */
 
 function Resume({sectionID}) {
     
