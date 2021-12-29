@@ -4,10 +4,7 @@ import styles from '../styles/Home.module.css'
 
 
 //COMPONENTS
-<<<<<<< HEAD
-=======
 
->>>>>>> 4ebd93fc3d2d8215dd5b38125d8dad1210d86ff8
 import Intro from '../components/intro'
 import Aboutme from '../components/aboutme'
 import Resume from '../components/resume'

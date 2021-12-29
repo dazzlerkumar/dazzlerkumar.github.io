@@ -43,7 +43,7 @@ function Projects({ sectionID }) {
                 {/*PROJECT CARDS*/}
 
                 <div className="card-flex d-flex flex-column align-items-center">
-                    {projects.map((x, i) => (
+                    {projects.map((x) => (
                         <div
                             className="project-card d-flex justify-content-center"
                             key={x.id}

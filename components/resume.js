@@ -35,7 +35,7 @@ function Resume({sectionID}) {
                                 <p>
                                     Iapos;ve done my schooling from Kendriya
                                     Vidyalaya, Gomti Nagar, Lucknow, and
-                                    currently pursuing Bachelor's of Technology
+                                    currently pursuing Bachelor'apos;s of Technology
                                     in Computer Science Engineering from Babu
                                     Banarasi Das National Institute of
                                     Technology and Management.
