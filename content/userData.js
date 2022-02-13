@@ -97,7 +97,7 @@ export const projects = [
     {
         id:1,
         projectImg: "/tgit.png",
-        projectTenure: "Oct 2019 - Present",
+        projectTenure: "Oct 2021",
         projectName: "The Great Indian Traffic - Indian Road Guide",
         desc_1: "Making Indian roads safer.",
         desc_2: "Developed a static Front-End product using NextJS and Tailwind CSS.",
@@ -116,6 +116,17 @@ export const projects = [
         desc_3: "Deployed and hosted on Vercel.",
         projectLink: "https://dazzlerkumar.vercel.app/",
         repoLink: "https://github.com/dazzlerkumar/dazzlerkumar.github.io",
+    },
+    {
+        id:3,
+        projectImg: "/angularecommerce.png",
+        projectTenure: "April 2021 - Jun 2021",
+        projectName: "AngularlyEcommerce",
+        desc_1: " A fully functional and beautiful eCommerce frontend.",
+        desc_2: " Developed using Angular 12 and Bootstrap.",
+        desc_3: "Deployed and hosted on Firebase.",
+        projectLink: "https://angularlyecommerce.web.app/",
+        repoLink: "https://github.com/dazzlerkumar/AngularlyEcommerce",
     },
     
     {
