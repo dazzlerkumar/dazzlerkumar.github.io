@@ -43,10 +43,10 @@ function Projects({ sectionID }) {
                 {/*PROJECT CARDS*/}
 
                 <div className="card-flex d-flex flex-column align-items-center">
-                    {projects.map((x) => (
+                    {projects.map((x,k) => (
                         <div
                             className="project-card d-flex justify-content-center"
-                            key={x.id}
+                            key={k}
                         >
                             {/*PROJECT IMAGE*/}
                             <div className="project-img-div">
@@ -67,13 +67,13 @@ function Projects({ sectionID }) {
                                     {x.projectName}
                                 </h4>
 
-                                <p>
+                                
                                     <ul>
-                                        <li>{x.desc_1}</li>
-                                        <li>{x.desc_2}</li>
-                                        <li>{x.desc_3}</li>
+                                        <li><p>{x.desc_1}   </p></li>
+                                        <li><p>{x.desc_2}   </p></li>
+                                        <li><p>{x.desc_3}   </p></li>
                                     </ul>
-                                </p>
+                             
                             </div>
                             <div className="project-links d-flex flex-column justify-content-around">
                                 <a

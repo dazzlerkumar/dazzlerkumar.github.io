@@ -1,20 +1,23 @@
 //CUSTOM LIBs
-import { educationDetails, experienceDetails, skillStack, resumeLink } from "../content/userData";
-
+import {
+    educationDetails,
+    experienceDetails,
+    skillStack,
+    resumeLink,
+} from "../content/userData";
 
 import animationData from "/public/books.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 /**
- * 
- * Resume Section 
+ *
+ * Resume Section
  * @param sectionID is given to the root element of Resume Functional Component
  * Returns the details of the person such as Education, Experience and skills
  *
  */
 
-function Resume({sectionID}) {
-    
+function Resume({ sectionID }) {
     return (
         <div className="resume-div" id={sectionID}>
             <div className="container">
@@ -33,64 +36,142 @@ function Resume({sectionID}) {
                         <div className="about-me-para">
                             <div>
                                 <p>
-                                    I{'`'}ve done my schooling from Kendriya
+                                    I{"`"}ve done my schooling from Kendriya
                                     Vidyalaya, Gomti Nagar, Lucknow, and
-                                    currently pursuing Bachelor{'`'}s of Technology
-                                    in Computer Science Engineering from Babu
-                                    Banarasi Das National Institute of
+                                    currently pursuing Bachelor{"`"}s of
+                                    Technology in Computer Science Engineering
+                                    from Babu Banarasi Das National Institute of
                                     Technology and Management.
                                 </p>
                             </div>
                             <h2 className="skill-heading">What I Know</h2>
-                            {skillStack.frontendStack ? 
-                            <div className="skill">
-                                <h4 className="skill-headings">Front End</h4>
-                               
-                                <div className="skill-icons">
-                                    <div className="d-flex icon-frame">
-                                        <img alt={skillStack.frontendStack.html} src={skillStack.frontendStack.html} />
-                                        <img alt={skillStack.frontendStack.css} src={skillStack.frontendStack.css}/>
-                                        <img alt={skillStack.frontendStack.js} src={skillStack.frontendStack.js} />
-                                    </div>
-                                    <div className="d-flex icon-frame">
-                                        <img alt={skillStack.frontendStack.ts} src={skillStack.frontendStack.ts} />
+                            {skillStack.frontendStack ? (
+                                <div className="skill">
+                                    <h4 className="skill-headings">
+                                        Front End
+                                    </h4>
 
-                                        <img alt={skillStack.frontendStack.angular} src={skillStack.frontendStack.angular} />
-                                        <img alt={skillStack.frontendStack.reactjs} src={skillStack.frontendStack.react} />
-                                    </div>
-                                    <div className="d-flex icon-frame">
-                                        <img alt={skillStack.frontendStack.bootstrap} src={skillStack.frontendStack.bootstrap}/>
+                                    <div className="skill-icons">
+                                        <div className="d-flex icon-frame">
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack
+                                                        .html
+                                                }
+                                                src={
+                                                    skillStack.frontendStack
+                                                        .html
+                                                }
+                                            />
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack.css
+                                                }
+                                                src={
+                                                    skillStack.frontendStack.css
+                                                }
+                                            />
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack.js
+                                                }
+                                                src={
+                                                    skillStack.frontendStack.js
+                                                }
+                                            />
+                                        </div>
+                                        <div className="d-flex icon-frame">
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack.ts
+                                                }
+                                                src={
+                                                    skillStack.frontendStack.ts
+                                                }
+                                            />
+
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack
+                                                        .angular
+                                                }
+                                                src={
+                                                    skillStack.frontendStack
+                                                        .angular
+                                                }
+                                            />
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack
+                                                        .reactjs
+                                                }
+                                                src={
+                                                    skillStack.frontendStack
+                                                        .react
+                                                }
+                                            />
+                                        </div>
+                                        <div className="d-flex icon-frame">
+                                            <img
+                                                alt={
+                                                    skillStack.frontendStack
+                                                        .bootstrap
+                                                }
+                                                src={
+                                                    skillStack.frontendStack
+                                                        .bootstrap
+                                                }
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                               
-                            </div>
-                            :''}
-                            {skillStack.backendStack ? 
-                            <div className="skill">
-                                <h4 className="skill-headings">Back End</h4>
-                               
-                                <div className="d-flex skill-icons">
-                                    <div className="d-flex icon-frame">
-                                        <img alt={skillStack.backendStack.node} src={skillStack.backendStack.node}/>
+                            ) : (
+                                ""
+                            )}
+                            {skillStack.backendStack ? (
+                                <div className="skill">
+                                    <h4 className="skill-headings">Back End</h4>
+
+                                    <div className="d-flex skill-icons">
+                                        <div className="d-flex icon-frame">
+                                            <img
+                                                alt={
+                                                    skillStack.backendStack.node
+                                                }
+                                                src={
+                                                    skillStack.backendStack.node
+                                                }
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                               
-                            </div>
-                            : ''}
-                            {skillStack.tools ? 
-                            <div className="skill">
-                                <h4 className="skill-headings">Tools</h4>
-                                
-                                <div className="d-flex skill-icons">
-                                    <div className="d-flex icon-frame">
-                                        <img alt={skillStack.backendStack.npm} src={skillStack.tools.npm} />
-                                        <img alt={skillStack.backendStack.git} src={skillStack.tools.git}/>
+                            ) : (
+                                ""
+                            )}
+                            {skillStack.tools ? (
+                                <div className="skill">
+                                    <h4 className="skill-headings">Tools</h4>
+
+                                    <div className="d-flex skill-icons">
+                                        <div className="d-flex icon-frame">
+                                            <img
+                                                alt={
+                                                    skillStack.backendStack.npm
+                                                }
+                                                src={skillStack.tools.npm}
+                                            />
+                                            <img
+                                                alt={
+                                                    skillStack.backendStack.git
+                                                }
+                                                src={skillStack.tools.git}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
-                                
-                            </div>
-                            :
-                            ''}
+                            ) : (
+                                ""
+                            )}
                             {/*EDUCATION AND EXPERIENCE DIV*/}
                             <div className="d-flex">
                                 {/*EDUCATION*/}
@@ -102,52 +183,73 @@ function Resume({sectionID}) {
                                             {educationDetails.bachelors.tenure}
                                         </p>
                                         <h4 className="ed-headings">
-                                            {educationDetails.bachelors.degreeName}
+                                            {
+                                                educationDetails.bachelors
+                                                    .degreeName
+                                            }
                                         </h4>
                                         <div className="ed-details">
                                             <h6>
-                                                {educationDetails.bachelors.clgName}
+                                                {
+                                                    educationDetails.bachelors
+                                                        .clgName
+                                                }
                                             </h6>
-                                            <p>
-                                                <ul>
-                                                    <li>
+
+                                            <ul>
+                                                <li>
+                                                    <p>
                                                         Majors in{" "}
                                                         {
-                                                            educationDetails.bachelors
+                                                            educationDetails
+                                                                .bachelors
                                                                 .majors
                                                         }
-                                                    </li>
-                                                    <li>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
                                                         Cumulative GPA :
                                                         {
-                                                            educationDetails.bachelors
-                                                                .gpa
+                                                            educationDetails
+                                                                .bachelors.gpa
                                                         }{" "}
                                                         till{" "}
                                                         {
-                                                            educationDetails.bachelors
+                                                            educationDetails
+                                                                .bachelors
                                                                 .currentSemOrYear
                                                         }
-                                                    </li>
-                                                    <li>
-                                                        {educationDetails.bachelors
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        {educationDetails
+                                                            .bachelors
                                                             .currentlyStudying
                                                             ? "Expected Graduation "
-                                                            : ""}
-                                                            {" "}:{' '}
+                                                            : ""}{" "}
+                                                        :{" "}
                                                         {
-                                                            educationDetails.bachelors
+                                                            educationDetails
+                                                                .bachelors
                                                                 .graduationYear
                                                         }
-                                                    </li>
-                                                </ul>
-                                            </p>
+                                                    </p>
+                                                </li>
+                                            </ul>
                                         </div>
                                         {/*End of Graduation*/}
                                         {/*High School*/}
                                         <p className="skill-tenure">
-                                            {educationDetails.hsc.currentlyStudying ? "": "Qualified in"}
-                                            {educationDetails.hsc.graduationYear}
+                                            {educationDetails.hsc
+                                                .currentlyStudying
+                                                ? ""
+                                                : "Qualified in"}
+                                            {
+                                                educationDetails.hsc
+                                                    .graduationYear
+                                            }
                                         </p>
                                         <h4 className="ed-headings">
                                             {educationDetails.hsc.degreeName}
@@ -156,15 +258,33 @@ function Resume({sectionID}) {
                                             <h6>
                                                 {educationDetails.hsc.clgName}
                                             </h6>
-                                            <p>
-                                                <ul>
-                                                    <li>{educationDetails.hsc.board}</li>
-                                                    <li>{educationDetails.hsc.gpa}</li>
-                                                    <li>
-                                                        {educationDetails.hsc.majors}
-                                                    </li>
-                                                </ul>
-                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        {
+                                                            educationDetails.hsc
+                                                                .board
+                                                        }
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        {
+                                                            educationDetails.hsc
+                                                                .gpa
+                                                        }
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        {
+                                                            educationDetails.hsc
+                                                                .majors
+                                                        }
+                                                    </p>
+                                                </li>
+                                            </ul>
                                         </div>
                                         {/*End of Graduation*/}
                                     </div>
@@ -178,49 +298,68 @@ function Resume({sectionID}) {
                                     <div className="skill">
                                         {/*Latest Experience*/}
                                         <p className="skill-tenure">
-                                            {experienceDetails.experience_1.tenure}
+                                            {
+                                                experienceDetails.experience_1
+                                                    .tenure
+                                            }
                                         </p>
                                         <h4 className="ed-headings">
-                                            {experienceDetails.experience_1.position}
+                                            {
+                                                experienceDetails.experience_1
+                                                    .position
+                                            }
                                         </h4>
                                         <div className="ed-details">
-                                            <h6>{experienceDetails.experience_1.companyName}</h6>
-                                            <p>
-                                                <ul>
-                                                    {
-                                                        experienceDetails.experience_1.desc.map(
-                                                            (d, i) =>
-                                                            <li key={i}>
-                                                                {d}
-                                                            </li>
-                                                        )
-                                                    }
-                                                </ul>
-                                            </p>
+                                            <h6>
+                                                {
+                                                    experienceDetails
+                                                        .experience_1
+                                                        .companyName
+                                                }
+                                            </h6>
+
+                                            <ul>
+                                                {experienceDetails.experience_1.desc.map(
+                                                    (d, i) => (
+                                                        <li key={i}>
+                                                            <p>{d}</p>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         </div>
                                         {/*End of Latest Experience*/}
                                         {/*Previous Experience*/}
                                         <p className="skill-tenure">
-                                            {experienceDetails.experience_2.tenure}
+                                            {
+                                                experienceDetails.experience_2
+                                                    .tenure
+                                            }
                                         </p>
                                         <h4 className="ed-headings">
-                                            {experienceDetails.experience_2.position}
-
+                                            {
+                                                experienceDetails.experience_2
+                                                    .position
+                                            }
                                         </h4>
                                         <div className="ed-details">
-                                            <h6>{experienceDetails.experience_2.companyName}</h6>
-                                            <p>
-                                                <ul>
-                                                    {
-                                                        experienceDetails.experience_2.desc.map(
-                                                            (d, i) =>
-                                                            <li key={i}>
-                                                                {d}
-                                                            </li>
-                                                        )
-                                                    }
-                                                </ul>
-                                            </p>
+                                            <h6>
+                                                {
+                                                    experienceDetails
+                                                        .experience_2
+                                                        .companyName
+                                                }
+                                            </h6>
+
+                                            <ul>
+                                                {experienceDetails.experience_2.desc.map(
+                                                    (d, i) => (
+                                                        <li key={i}>
+                                                            <p>{d}</p>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         </div>
                                         {/*End of Previous Experience*/}
                                     </div>

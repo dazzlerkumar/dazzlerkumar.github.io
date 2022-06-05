@@ -53,7 +53,7 @@ export default function Intro({sectionID}) {
                         <img
                             className="profilePic"
                             src={introduction.profilePicUrl}
-                            alt="The Developer"
+                            alt="Picture of the Developerr"
                         />
                     </div>
                     {/*End of Main Profile*/}
