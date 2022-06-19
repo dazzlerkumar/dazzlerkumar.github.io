@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Sorts+Mill+Goudy&display=swap");
+:root {
+    --primary: #3c4649;
+    --secondary: #1e2528;
+    --heading: #ebe7e0;
+    --text-1: #91959b;
+    --text-2: #b9d1e4;
+}
+
+body:focus-visible {
+    outline: none;
+}
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 5px;
+    width: 0.625rem;
+}
 
 html,
 body {
@@ -45,7 +67,7 @@ p {
     margin: 0.5rem 0;
     box-shadow: 0.3rem 0.2rem #1e2528;
 }
-.hide-nav-menu{
+.hide-nav-menu {
     display: none;
     visibility: hidden;
     transform: translateX(50rem);
@@ -55,11 +77,11 @@ p {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top:1rem;
+    top: 1rem;
     width: 100%;
     transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
 }
-.hide-navbar{
+.hide-navbar {
     display: none;
     visibility: hidden;
     transform: translateX(50rem);
@@ -127,11 +149,11 @@ p {
 
     background-color: #1e2528;
 }
-.social-media a:hover{
+.social-media a:hover {
     border-radius: 50%;
     transform: scale(1.2);
     transition: all 0.3s ease;
-    box-shadow:  20px 15px rgba(60,70,73,0.15);
+    box-shadow: 20px 15px rgba(60, 70, 73, 0.15);
 }
 /*___ABOUT ME___*/
 
@@ -155,11 +177,10 @@ p {
     font-weight: 700;
 }
 
-.about-me-para{
+.about-me-para {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
 }
 .about-me-para p {
     margin: 0.5em 0 0 0;
@@ -250,7 +271,6 @@ p {
     margin-left: 0.5em;
 }
 
-
 .btn {
     margin: 1.5em;
     width: 10em;
@@ -260,9 +280,8 @@ p {
 .btn:hover {
     background-color: #1e2528;
 }
-.btn a:hover{
+.btn a:hover {
     color: #b9d1e4;
-
 }
 /*END of RESUME*/
 /*_____________*/
@@ -298,7 +317,7 @@ p {
     height: 240px;
     margin: 0.9em 0 0.9em 0;
 }
-.project-img-div img{
+.project-img-div img {
     border-radius: 5px;
 }
 .project-details {
@@ -323,7 +342,7 @@ p {
 .project-links {
     padding: 0.5em;
 }
-.project-links img:hover{
+.project-links img:hover {
     transform: scale(0.9);
 }
 .project-intro {
@@ -339,6 +358,62 @@ p {
 }
 
 /*End of PROJECTS*/
+/* Project Page */
+
+.project-page-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+.project-page-container .project-image {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--secondary);
+    border-radius: 25px;
+    overflow-y: hidden;
+    border: 2px solid var(--secondary);
+}
+.project-image img {
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes move {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -25%;
+    }
+    50% {
+        margin-top: -50%;
+    }
+    100% {
+        margin-top: -71%;
+    }
+}
+.project-page-details {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+.project-forehead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.project-forehead a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-2);
+}
+.project-forehead a:hover{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
 /*________________________________*/
 /*MOBILE VERSION*/
 /*________________________________*/

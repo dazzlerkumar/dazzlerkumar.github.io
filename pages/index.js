@@ -46,8 +46,6 @@ export default function Home() {
     console.log(
         "%cSince, you've made it to here. I'd like to be in contact with you. Email me at dazzler.deepak98@gmail.com",
         third,
-        
-        
     );
 
     return (

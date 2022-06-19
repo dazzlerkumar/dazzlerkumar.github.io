@@ -1,4 +1,5 @@
 //LIBS
+import  { useRouter } from "next/router";
 
 //CUSTOM LIBs
 import { projects } from "../content/userData";
@@ -18,6 +19,14 @@ import linkIcon from "../public/project_link.png";
  */
 
 function Projects({ sectionID }) {
+    const router = useRouter()
+
+    function OpenProject(details){
+        console.log(details)
+        router.push({
+            pathname:`projects/${details.id}`
+        })
+    }
     return (
         <div className="project-div" id={sectionID}>
             <div className="container">
@@ -63,7 +72,7 @@ function Projects({ sectionID }) {
                                 <p className="project-date">
                                     {x.projectTenure}
                                 </p>
-                                <h4 className="project-heading">
+                                <h4 className="project-heading" onClick={()=>OpenProject(x)}>
                                     {x.projectName}
                                 </h4>
 
