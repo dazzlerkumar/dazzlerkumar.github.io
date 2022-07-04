@@ -2,14 +2,14 @@ import animationData from "/public/webdesigner.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 /**
- *
- * Resume Section
+ * 
+ * Resume Section 
  * @param sectionID is given to the root element of Resume Functional Component
  * Returns brief summary about the person
  *
  */
 
-export default function Aboutme({ sectionID }) {
+export default function Aboutme({sectionID}) {
     return (
         <div className="about-me-div" id={sectionID}>
             <div className="container">
@@ -37,11 +37,11 @@ export default function Aboutme({ sectionID }) {
                                     On a journey to live a better life.
                                 </span>
                             </p>
-                            {/*   <p>
+                            <p>
                             Worked as a part-time Front-End Website Developer for about 3 months in a start-up with 
 experience building User Interfaces of the website using the NextJS (ReactJS) framework.
 
-                            </p> */}
+                            </p>
                             <p>
                                 I describe myself as a focused, fast learner,
                                 curious and grateful person. I see and find

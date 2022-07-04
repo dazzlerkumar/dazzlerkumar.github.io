@@ -31,12 +31,12 @@ export default function Intro({ sectionID }) {
                     <div className="sub-hero-1 col-md-4 d-flex justify-content-end align-items-end">
                         <div className="name-position-box">
                             <div className="name-box">
-                                <span className="name">A</span>
-                                <span className="name">R</span>
-                                <span className="name">V</span>
-                                <span className="name">I</span>
-                                <span className="name">N</span>
                                 <span className="name">D</span>
+                                <span className="name">E</span>
+                                <span className="name">E</span>
+                                <span className="name">P</span>
+                                <span className="name">A</span>
+                                <span className="name">K</span>
                             </div>
                         </div>
                     </div>
@@ -66,13 +66,13 @@ export default function Intro({ sectionID }) {
             <div className="social-media d-flex align-items-center">
                 <LightSpeed left duration={2000}>
                     <div className="container d-flex justify-content-around">
-                       {/*  <a
+                        <a
                             target="_blank"
                             rel="noreferrer"
                             href={socialMedia.twitter}
                         >
                             <Image src={twt} quality={100} alt="twitter Icon" />
-                        </a> */}
+                        </a>
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -91,7 +91,17 @@ export default function Intro({ sectionID }) {
                         >
                             <Image src={git} quality={100} alt="twitter Icon" />
                         </a>
-                       
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={socialMedia.medium}
+                        >
+                            <Image
+                                src={medium}
+                                quality={100}
+                                alt="twitter Icon"
+                            />
+                        </a>
                     </div>
                 </LightSpeed>
             </div>
