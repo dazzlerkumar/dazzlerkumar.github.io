@@ -16,42 +16,10 @@ import Project from "../components/projects";
  */
 
 export default function Home() {
-    let blackBackground = [
-        "font-size: 38px",
-        "background-color: #000",
-        "color: #52d273",
-        
-        "padding:0.5rem",
-        "border: 3px groove #52d273",
-    ].join(" ;");
-    let sec = [
-        "font-size: 16px",
-        "background-color: #333",
-        "color: #e95065",
-    ].join(" ;");
-    let third = [
-        "font-size: 16px",
-        "background-color: #333",
-        "color: #46bddf ",
-        "padding:0.5rem",
-        "border: 1px groove #52d273",
-    ].join(" ;");
-    
-    console.log("%c Hello Hacker! 👨‍💻", blackBackground);
-    console.log("%c I'm %O", sec, {
-        name: "Deepak Kumar",
-        age: "21",
-        occupation: "Frontend Developer",
-    });
-    console.log(
-        "%cSince, you've made it to here. I'd like to be in contact with you. Email me at dazzler.deepak98@gmail.com",
-        third,
-    );
-
     return (
         <div>
             <Head>
-                <title>Deepak Kumar</title>
+                <title>Arvind Kumar</title>
                 <meta name="author" content="Deepak Kumar" />
                 <meta
                     name="Description"
